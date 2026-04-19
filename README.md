@@ -6,6 +6,22 @@
 
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. Steering wheel button events are absent from the CAN gateway. Solution: direct LIN bus sniffing between SWM and CEM.
 <img src="pics/LIN_bus_sniffing.png" alt="LIN bus sniffing Wiring Diagram" width="1500">
+
+### Vehicle-side connector pinout specifications.
+
+| Terminal in the breakout box | Control module terminal | Signal type |
+| :--- | :--- | :--- |
+| #1 | #1 | - |
+| #2 | #2 | Ground |
+| #3 | #3 | Control module communication cable CAN_L |
+| #4 | #4 | Control module communication cable CAN_H |
+| #5 | #5 | - |
+| #6 | #6 | - |
+| #7 | #7 | Communication cable LIN central electronic module (CEM) |
+| #8 | #8 | Power supply |
+| #9 | #9 | Windshield wipers |
+| #10 | #10 | Horn |
+
 ## Decoded Signal Table
 
 | Signal Name   | LIN ID | Data Bytes | Description        | Example Decode |
