@@ -1,1 +1,3 @@
 # Outdated-Volvo-P2-Nav-Retrofit-Guide-for-Android-Auto-Multimedia
+...
+Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. Steering wheel button events are absent from the CAN gateway. Solution: direct LIN bus sniffing between SWM and CEM.
