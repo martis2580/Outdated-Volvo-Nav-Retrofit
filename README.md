@@ -25,3 +25,5 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="400"> |
 
 This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
+
+All LIN bus data in this project was captured using the **USBlini USB-to-LIN interface**. Official page: https://www.fischl.de/usblini/
