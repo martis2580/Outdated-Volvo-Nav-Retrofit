@@ -11,7 +11,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | Signal Name   | LIN ID | Data Bytes | Description        | Example Decode |
 |--------------|--------|-----------|--------------------|----------------|
 | NO_PRESS     | `0x01` | `3F 00`   | No button pressed  | <img src="pics/no_press_LIN.png" width="200"> |
-| BTN_NEXT     | `0x01` | `3D 00`   | Next track         | <img src="./assets/lin_decode.png" width="140"> |
+| BTN_NEXT     | `0x01` | `3D 00`   | Next track         | <img src="pics/BTN_NEXT_LIN.png" width="140"> |
 | BTN_PREV     | `0x01` | `3E 00`   | Previous track     | <img src="./assets/lin_decode.png" width="140"> |
 | BTN_VOL_UP   | `0x01` | `37 00`   | Volume up          | <img src="./assets/lin_decode.png" width="140"> |
 | BTN_VOL_DOWN | `0x01` | `3B 00`   | Volume down        | <img src="./assets/lin_decode.png" width="140"> |
