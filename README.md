@@ -23,7 +23,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | BTN_RIGHT    | `0x01` | `3F 01`   | Navigate right     | <img src="pics/BTN_RIGHT_LIN.png" width="400"> |
 | CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="pics/CLL_ANSWR_LIN.png" width="400"> |
 | CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="400"> |
-|--------------------------------------------------------------------------|
+
 This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
 
 All LIN bus data in this project was captured using the  
