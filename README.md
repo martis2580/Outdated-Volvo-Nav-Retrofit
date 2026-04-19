@@ -24,7 +24,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 || Connector 1 | Connector 2 |
 | :---: | :---: | :---: |
-| <img src="pics/SWM_connector_2.png" width="300"> | <img src="URL_TO_IMAGE_2" width="300"> |
+|| <img src="pics/SWM_connector_2.png" width="300"> | <img src="URL_TO_IMAGE_2" width="300"> |
 | SWM Connector | Vehicle-side connector | Signal type |
 | #1 | #1 | - |
 | #2 | #2 | Ground |
