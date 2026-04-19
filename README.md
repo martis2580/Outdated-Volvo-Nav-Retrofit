@@ -22,6 +22,21 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | #9 | #9 | Windshield wipers |
 | #10 | #10 | Horn |
 
+|  |  |  |
+| :--- | :--- | :--- |
+| ![Connector 1](URL_TO_IMAGE_1) | ![Connector 2](URL_TO_IMAGE_2) |  |
+| Terminal in the breakout box | Control module terminal | Signal type |
+| #1 | #1 | - |
+| #2 | #2 | Ground |
+| #3 | #3 | Control module communication cable CAN_L |
+| #4 | #4 | Control module communication cable CAN_H |
+| #5 | #5 | - |
+| #6 | #6 | - |
+| #7 | #7 | Communication cable LIN central electronic module (CEM) |
+| #8 | #8 | Power supply |
+| #9 | #9 | Windshield wipers |
+| #10 | #10 | Horn |
+
 ## Decoded Signal Table
 
 | Signal Name   | LIN ID | Data Bytes | Description        | Example Decode |
