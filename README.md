@@ -11,17 +11,17 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | Signal Name   | LIN ID | Data Bytes | Description        | Example Decode |
 |--------------|--------|-----------|--------------------|----------------|
 | NO_PRESS     | `0x01` | `3F 00`   | No button pressed  | <img src="pics/no_press_LIN.png" width="500"> |
-| BTN_NEXT     | `0x01` | `3D 00`   | Next track         | <img src="pics/BTN_NEXT_LIN.png" width="140"> |
-| BTN_PREV     | `0x01` | `3E 00`   | Previous track     | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_VOL_UP   | `0x01` | `37 00`   | Volume up          | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_VOL_DOWN | `0x01` | `3B 00`   | Volume down        | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_BACK     | `0x01` | `3F 10`   | Back               | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_ENTER    | `0x01` | `3F 20`   | Enter / Select     | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_UP       | `0x01` | `3F 08`   | Navigate up        | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_DOWN     | `0x01` | `3F 04`   | Navigate down      | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_LEFT     | `0x01` | `3F 02`   | Navigate left      | <img src="./assets/lin_decode.png" width="140"> |
-| BTN_RIGHT    | `0x01` | `3F 01`   | Navigate right     | <img src="./assets/lin_decode.png" width="140"> |
-| CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="./assets/lin_decode.png" width="140"> |
-| CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="./assets/lin_decode.png" width="140"> |
+| BTN_NEXT     | `0x01` | `3D 00`   | Next track         | <img src="pics/BTN_NEXT_LIN.png" width="500"> |
+| BTN_PREV     | `0x01` | `3E 00`   | Previous track     | <img src="pics/BTN_PREV_LIN.png" width="500"> |
+| BTN_VOL_UP   | `0x01` | `37 00`   | Volume up          | <img src="pics/BTN_VOL_UP_LIN.png" width="500"> |
+| BTN_VOL_DOWN | `0x01` | `3B 00`   | Volume down        | <img src="pics/BTN_VOL_DOWN_LIN.png" width="500"> |
+| BTN_BACK     | `0x01` | `3F 10`   | Back               | <img src="pics/BTN_BACK_LIN.png" width="500"> |
+| BTN_ENTER    | `0x01` | `3F 20`   | Enter / Select     | <img src="pics/BTN_ENTER_LIN.png" width="500"> |
+| BTN_UP       | `0x01` | `3F 08`   | Navigate up        | <img src="pics/BTN_UP_LIN.png" width="500"> |
+| BTN_DOWN     | `0x01` | `3F 04`   | Navigate down      | <img src="pics/BTN_DOWN_LIN.png" width="500"> |
+| BTN_LEFT     | `0x01` | `3F 02`   | Navigate left      | <img src="pics/BTN_LEFT_LIN.png" width="500"> |
+| BTN_RIGHT    | `0x01` | `3F 01`   | Navigate right     | <img src="pics/BTN_RIGHT_LIN.png" width="500"> |
+| CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="pics/CLL_ANSWR_LIN.png" width="500"> |
+| CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="500"> |
 
 ---
