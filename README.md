@@ -24,6 +24,10 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="pics/CLL_ANSWR_LIN.png" width="400"> |
 | CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="400"> |
 
-This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
+All LIN bus data in this project was captured using the  
+**[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)**
 
-All LIN bus data in this project was captured using the **USBlini USB-to-LIN interface**. Official page: https://www.fischl.de/usblini/
+### Software Support
+- Python library: **[pyUSBlini](https://github.com/speedxperts/volvo-rti-retrofit)**
+  
+This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
