@@ -22,7 +22,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | #9 | #9 | Windshield wipers |
 | #10 | #10 | Horn |
 
-| ![Connector 1](URL_TO_IMAGE_1) | ![Connector 2](URL_TO_IMAGE_2) |  |
+| ![Connector 1](URL_TO_IMAGE_1) | ![Connector 2](URL_TO_IMAGE_2) |
 | :--- | :--- | :--- |
 | Terminal in the breakout box | Control module terminal | Signal type |
 | #1 | #1 | - |
