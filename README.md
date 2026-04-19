@@ -24,7 +24,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 || ![Connector 1](URL_TO_IMAGE_1) | ![Connector 2](URL_TO_IMAGE_2) |
 | :--- | :--- |:--- |
-| Terminal in the breakout box | Control module terminal | Signal type |
+| SWM Connector | Vehicle-side connector | Signal type |
 | #1 | #1 | - |
 | #2 | #2 | Ground |
 | #3 | #3 | Control module communication cable CAN_L |
