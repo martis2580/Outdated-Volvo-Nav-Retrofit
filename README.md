@@ -9,22 +9,9 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 ### Vehicle-side connector pinout specifications.
 
-| Terminal in the breakout box | Control module terminal | Signal type |
-| :--- | :--- | :--- |
-| #1 | #1 | - |
-| #2 | #2 | Ground |
-| #3 | #3 | Control module communication cable CAN_L |
-| #4 | #4 | Control module communication cable CAN_H |
-| #5 | #5 | - |
-| #6 | #6 | - |
-| #7 | #7 | Communication cable LIN central electronic module (CEM) |
-| #8 | #8 | Power supply |
-| #9 | #9 | Windshield wipers |
-| #10 | #10 | Horn |
-
-|| Connector 1 | Connector 2 |
+|| Location | Pin Numbering |
 | :---: | :---: | :---: |
-|| <img src="pics/SWM_connector.png" width="300"> | <img src="pics/SWM_connector_2.png" width="200"> |
+|| <img src="pics/SWM_connector.png" width="200"> | <img src="pics/SWM_connector_2.png" width="300"> |
 | SWM Connector | Vehicle-side connector | Signal type |
 | #1 | #1 | - |
 | #2 | #2 | Ground |
