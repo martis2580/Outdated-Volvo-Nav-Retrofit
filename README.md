@@ -24,7 +24,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | #9 | #9 | Windshield wipers |
 | #10 | #10 | Horn |
 
-## Decoded Signal Table
+## Decoded Steering Wheel Button Signal Table
 
 | Signal Name   | LIN ID | Data Bytes | Description        | Example Decode |
 |--------------|--------|-----------|--------------------|----------------|
