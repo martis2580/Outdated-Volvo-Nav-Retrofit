@@ -22,7 +22,9 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 | #9 | #9 | Windshield wipers |
 | #10 | #10 | Horn |
 
-|| ![Connector 1](pics/SWM_connector_2.png) | ![Connector 2](URL_TO_IMAGE_2) |
+pics/SWM_connector_2.png
+
+|| ![Connector 1](<img src="pics/no_press_LIN.png" width="200">) | ![Connector 2](URL_TO_IMAGE_2) |
 | :--- | :--- |:--- |
 | SWM Connector | Vehicle-side connector | Signal type |
 | #1 | #1 | - |
