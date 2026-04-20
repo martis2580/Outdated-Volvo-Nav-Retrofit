@@ -7,7 +7,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build.
 
-<img src="pics/Steering_wheel_nav_button.jpg" alt="LIN bus sniffing Wiring Diagram" width="1000">
+<img src="pics/Steering_wheel_nav_button.jpg" alt="LIN bus sniffing Wiring Diagram" width="700">
 
 Steering wheel button events are absent from the CAN gateway. Solution: direct LIN bus sniffing between SWM and CEM.
 <img src="pics/LIN_bus_sniffing.png" alt="LIN bus sniffing Wiring Diagram" width="1500">
