@@ -48,4 +48,4 @@ All LIN bus data in this project was captured using the
 **[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)**
 
 ### Software Support
-- Python library: **[pyUSBlini](https://github.com/speedxperts/volvo-rti-retrofit)**
+- Python library: **[pyUSBlini](https://github.com/EmbedME/pyUSBlini)**
