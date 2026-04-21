@@ -8,8 +8,11 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 ## Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
-- USB SSD 120GB, R/W speed up to 500MB/s* [emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
+- USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
 - 4 port USB-A HUB, powered [Startech.com](https://www.startech.com/en-us/usb-hubs/h5a4a-usb-hub);
+- USB to LIN Interface [fischl](https://www.fischl.de/order/);
+- Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
+- CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
 
 ## Software:
 - OS Debian GNU/Linux 13 "Trixie";
