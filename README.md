@@ -6,11 +6,13 @@
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
 
 ## Hardware:
-- Raspberry Pi 5, 8 GB RAM
+- Raspberry Pi 5, 8 GB RAM;
 - USB SSD (recommended)
+- 4-port USB-A HUB, powered;
 
 ## Software:
-- Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy)
+- Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
+- Debian GNU/Linux 13 "Trixie";
 
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons physically in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build:
 
