@@ -70,8 +70,8 @@ This isn’t straightforward, though. In vehicles without the factory-installed 
 
 This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
 
-All LIN bus data in this project was captured using the USBlini - USB to LIN Interface and PulseView logic analyzer:
-**[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)**
+All LIN bus data in this project was captured using the
+**[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)** and **[PulseView logic analyzer](https://sigrok.org/wiki/PulseView)**
 
 ### Software Support
 - Python library: **[pyUSBlini](https://github.com/EmbedME/pyUSBlini)**
