@@ -20,6 +20,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 - OS Debian GNU/Linux 13 "Trixie";
 - Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
 
+## Making LIN Work
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons physically in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build:
 
 <div align="center">
@@ -69,7 +70,7 @@ This isn’t straightforward, though. In vehicles without the factory-installed 
 
 This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
 
-All LIN bus data in this project was captured using the  
+All LIN bus data in this project was captured using the USBlini - USB to LIN Interface and PulseView logic analyzer:
 **[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)**
 
 ### Software Support
