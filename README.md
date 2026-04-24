@@ -5,6 +5,16 @@
 
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
 
+```mermaid
+flowchart LR
+
+A[Volvo FuseBox, F12_KL30] -->|12V| B(DC/DC 5.1V)
+A[Volvo FuseBox, F12_KL30] -->|12V| C(DC/DC 9V)
+B -->|5.1V| D(RaspberryPi 5)
+B -->|5.1V| E(USB 3.0 Y cable)-->|5.1V| F(SSD)
+C -->|9V| G(Arduino Uno)
+```
+
 ## Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
