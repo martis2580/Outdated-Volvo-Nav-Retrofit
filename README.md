@@ -5,6 +5,7 @@
 
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
 
+## The Power Logic
 ```mermaid
 flowchart LR
 
