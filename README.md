@@ -20,7 +20,7 @@ Electronics is nothing more than wires and contacts :). With that in mind, extra
 </div>
 
 <div align="center">
-  <img src="[https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/raw/main/pics/Fuse_contact.png](https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box.png)" width="750">
+  <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box.png" width="750">
   <br>
   <i>Wiring before vs after modification with contact terminals integrated directly into the OEM fuse box for retrofit installation.</i>
   <br><br>
