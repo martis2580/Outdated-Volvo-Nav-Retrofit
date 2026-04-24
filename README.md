@@ -19,7 +19,7 @@ Electronics is nothing more than wires and contacts :). With that in mind, extra
       Image 1
     </td>
     <td align="right">
-      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="450"/><br>
+      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="500"/><br>
       Image 2
     </td>
   </tr>
