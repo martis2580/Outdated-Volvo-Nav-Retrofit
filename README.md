@@ -10,6 +10,8 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 [![Printables](https://img.shields.io/badge/Printables-Techiejam-orange?style=for-the-badge&logo=Prusa)](https://www.printables.com/@Techiejam_2191647)
 
 ## The Power Logic
+Electronics is nothing more than wires and contacts :). With that in mind, extra care was taken with the physical power connections while integrating the retrofit DIY navigation system into the vehicle. In automotive environments, long-term reliability depends heavily on secure, well-fitting contacts. An alternative fuse contact  [TE Connectivity 880398-2](https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/PDF_file/Fuse_contact_880398-2.pdf) was sourced as a swap-in for the original Volvo fuse terminals, making it possible to tap new wiring cleanly into the factory harness as if it was built in from day one.
+
 ```mermaid
 flowchart LR
 
