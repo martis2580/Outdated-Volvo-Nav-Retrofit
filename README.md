@@ -11,12 +11,13 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 ## The Power Logic
 Electronics is nothing more than wires and contacts :). With that in mind, extra care was taken with the physical power connections while integrating the retrofit DIY navigation system into the vehicle. In automotive environments, long-term reliability depends heavily on secure, well-fitting contacts. 
+In this project, I decided to power the RTI monitor and other electronic components directly from the passenger compartment fuse box, just like Volvo designed it from the factory. I also followed the genuine Volvo wiring diagram and kept the fuse layout the same as stock: F12 for the RTI display, F13 for the Raspberry Pi, and other components.
 
 <table>
   <tr>
     <td align="left">
       <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuses_Passenger_compartment.png" width="300"/><br>
-      Image 1
+      Location of the passenger fuse box
     </td>
     <td align="right">
       <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="490"/><br>
