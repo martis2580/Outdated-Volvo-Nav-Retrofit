@@ -15,7 +15,7 @@ Electronics is nothing more than wires and contacts :). With that in mind, extra
 <div align="center">
   <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/raw/main/pics/Fuse_contact.png" width="750">
   <br>
-  <i>Contact Comparison: Original vs TE Connectivity 880398-2.</i>
+  <i>Contact Comparison: Original vs TE Connectivity 880398-2. It looks quite different, but it fits very well.</i>
   <br><br>
 </div>
 
