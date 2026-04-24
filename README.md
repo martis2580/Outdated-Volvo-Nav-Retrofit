@@ -15,11 +15,11 @@ Electronics is nothing more than wires and contacts :). With that in mind, extra
 <table>
   <tr>
     <td align="left">
-      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuses_Passenger_compartment.png" width="150"/><br>
+      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuses_Passenger_compartment.png" width="300"/><br>
       Image 1
     </td>
     <td align="right">
-      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="150"/><br>
+      <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="450"/><br>
       Image 2
     </td>
   </tr>
