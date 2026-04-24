@@ -13,9 +13,9 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 Electronics is nothing more than wires and contacts :). With that in mind, extra care was taken with the physical power connections while integrating the retrofit DIY navigation system into the vehicle. In automotive environments, long-term reliability depends heavily on secure, well-fitting contacts. An alternative fuse contact  [TE Connectivity 880398-2](https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/PDF_file/Fuse_contact_880398-2.pdf) was sourced as a swap-in for the original Volvo fuse terminals, making it possible to tap new wiring cleanly into the factory harness as if it was built in from day one.
 
 <div align="center">
-  <img src="[pics/Steering_wheel_nav_button.jpg](https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_contact.png)" alt="Contact Comparison: Original vs TE Connectivity 880398-2" width="550">
+  <img src="[pics/Steering_wheel_nav_button.jpg](https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_contact.png)" width="550">
   <br>
-  <i>This NAV button installation guide is based on genuine Volvo technical documentation (Instruction No. 30660446) and has been visualized in a comic style using Gemini.</i>
+  <i>Contact Comparison: Original vs TE Connectivity 880398-2.</i>
   <br><br> </div>
 
 ```mermaid
