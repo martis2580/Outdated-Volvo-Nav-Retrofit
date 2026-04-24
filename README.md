@@ -5,6 +5,8 @@
 
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
 
+[![Models Published](https://img.shields.io/badge/Models-24-blue?style=for-the-badge&logo=3d-printing)](https://www.printables.com/@Techiejam_2191647)7)
+
 ## The Power Logic
 ```mermaid
 flowchart LR
