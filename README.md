@@ -21,7 +21,7 @@ In this project, I decided to power the RTI monitor and other electronic compone
     </td>
     <td align="right">
       <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/Fuse_box_2.png" width="490"/><br>
-      Image 2
+      Passenger Compartment Fuse Table
     </td>
   </tr>
 </table>
