@@ -126,3 +126,7 @@ All LIN bus data in this project was captured using the
 - Python library: **[pyUSBlini](https://github.com/EmbedME/pyUSBlini)**
 
 Important: Volvo LIN communication baud rate is 9600 bps.
+
+## The "Black Box" Build
+The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
+
