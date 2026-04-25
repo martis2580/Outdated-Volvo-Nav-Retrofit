@@ -42,11 +42,18 @@ An alternative fuse contact  [TE Connectivity 880398-2](https://github.com/marti
   <br><br>
 </div>
 
-The RTI display requires an ignition signal. Referencing the official Volvo wiring diagram, this connects directly to the Audio Unit Module (AUM):
+The RTI display [16/46] requires an ignition signal. Referencing the official Volvo wiring diagram, this connects directly to the Audio Unit Module (AUM)[16/1]:
 <div align="center">
   <img src="pics/IGN.png" width="550">
   <br>
-  <i>This NAV button installation guide is based on genuine Volvo technical documentation (Instruction No. 30660446) and has been visualized in a comic style using Gemini.</i>
+  <i>In the original setup, there’s a direct link between the RTI display [16/46] and the AUM [16/1].</i>
+  <br><br> 
+</div>
+
+<div align="center">
+  <img src="pics/AUM_pinout.png" width="550">
+  <br>
+  <i>Make sure you're tapping into the correct pin on the AUM, as the ignition trigger (often labeled ACC or 15) is what tells the RTI screen to power on when you turn the key.</i>
   <br><br> 
 </div>
 
