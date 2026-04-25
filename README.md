@@ -47,11 +47,11 @@ The RTI display [16/46] requires an ignition signal. Referencing the official Vo
 <table>
   <tr>
     <td align="left">
-      <img src="pics/IGN.png" width="300"/><br>
+      <img src="pics/IGN.png" width="490"/><br>
       In the original setup, there’s a direct link between the RTI display [16/46] and the AUM [16/1].
     </td>
     <td align="right">
-      <img src="pics/AUM_pinout.png" width="490"/><br>
+      <img src="pics/AUM_pinout.png" width="300"/><br>
       Make sure you're tapping into the correct pin on the AUM, as the ignition trigger (often labeled ACC or 15) is what tells the RTI screen to power on when you turn the key.
     </td>
   </tr>
