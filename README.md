@@ -45,8 +45,8 @@ An alternative fuse contact  [TE Connectivity 880398-2](https://github.com/marti
 ```mermaid
 flowchart LR
 
-A[Volvo FuseBox, F12_KL30] -->|12V| B(DC/DC 5.1V)
-A[Volvo FuseBox, F12_KL30] -->|12V| C(DC/DC 9V)
+A[Volvo FuseBox, F13_KL30] -->|12V| B(DC/DC 5.1V)
+A[Volvo FuseBox, F13_KL30] -->|12V| C(DC/DC 9V)
 B -->|5.1V| D(RaspberryPi 5)
 B -->|5.1V| E(USB 3.0 Y cable)-->|5.1V| F(SSD)
 C -->|9V| G(Arduino Uno)
