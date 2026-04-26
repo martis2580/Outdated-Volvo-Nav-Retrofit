@@ -87,7 +87,7 @@ I'm grounding all the electronics to the factory grounding point near the lower 
   </tr>
 </table>
 
-## Hardware:
+## BOM of Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
 - USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
