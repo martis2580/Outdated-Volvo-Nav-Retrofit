@@ -57,6 +57,8 @@ The RTI display [16/46] requires an ignition signal. Referencing the official Vo
   </tr>
 </table>
 
+Here’s a simple mermaid maps of the power logic I’m working with:
+
 ```mermaid
 flowchart LR
 A[Volvo FuseBox, F12] -->|KL30, 12V| B(RTI - A:1,A:2)
