@@ -77,11 +77,11 @@ I'm grounding all the electronics to the factory grounding point near the lower 
 <table>
   <tr>
     <td align="left">
-      <img src="pics/GND.png" width="500"/><br>
+      <img src="pics/GND.png" width="700"/><br>
       Location of the factory ground point.
     </td>
     <td align="left">
-      <img src="pics/GND_2.png" width="300"/><br>
+      <img src="pics/GND_2.png" width="200"/><br>
       It’s the perfect spot to keep all the wiring tucked away and properly grounded.
     </td>
   </tr>
