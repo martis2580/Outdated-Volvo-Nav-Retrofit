@@ -73,6 +73,19 @@ B -->|5.1V| D(RaspberryPi 5)
 B -->|5.1V| E(USB 3.0 Y cable)-->|5.1V| F(SSD)
 C -->|9V| G(Arduino Uno)
 ```
+I'm grounding all the electronics to the factory grounding point near the lower door hinge:
+<table>
+  <tr>
+    <td align="left">
+      <img src="pics/GND.png" width="500"/><br>
+      Location of the factory ground point.
+    </td>
+    <td align="left">
+      <img src="pics/GND_2.png" width="300"/><br>
+      It’s the perfect spot to keep all the wiring tucked away and properly grounded.
+    </td>
+  </tr>
+</table>
 
 ## Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
