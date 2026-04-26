@@ -59,7 +59,12 @@ The RTI display [16/46] requires an ignition signal. Referencing the official Vo
 
 ```mermaid
 flowchart LR
+A[Volvo FuseBox, F12] -->|KL30, 12V| B(RTI - A:1,A:2)
+C[AUM - A:2] -->|KL15, 12V| D(RTI - A:3)
+```
 
+```mermaid
+flowchart LR
 A[Volvo FuseBox, F13_KL30] -->|12V| B(DC/DC 5.1V)
 A[Volvo FuseBox, F13_KL30] -->|12V| C(DC/DC 9V)
 B -->|5.1V| D(RaspberryPi 5)
