@@ -108,7 +108,18 @@ For this project, we selected the Raspberry Pi 5, which provides a dedicated ON/
 
 ```mermaid
 flowchart LR
-    A([POWER_ENABLED: TRUE])  --> C[...]
+    A([POWER_ENABLED: TRUE])  -->C[/POWER_ON/]
+    B([Enable DC/DC 5.1V output])  -->C[/POWER_ON/]
+    C -->D{IGN message is ON?}
+    D -->|YES| C
+    D -->|NO| E[/Activate pulse ON J2 relay/]
+    E -->F[/RPI_Power_Down_timer 15 sec. /]
+    F -->G{Is any CAN frame received?}
+    G -->|YES| H[CAN BUS runing, keep waiting]
+    G -->|NO|J@{ shape: hex, label: "Disable DC/DC 5.1V output" }
+    J -->K[POWER_OFF]
+    K --oL@{ shape: odd, label: "POWER_ENABLED: FALSE"}
+    K -->M[Enter loop: Arduino always on duty]
 ```
 
 ## BOM of Hardware:
