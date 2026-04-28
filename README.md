@@ -112,7 +112,7 @@ flowchart LR
     B([Enable DC/DC 5.1V output])  -->C[/POWER_ON/]
     C -->D{IGN message is ON?}
     D -->|YES| C
-    D -->|NO| E[/Activate pulse ON J2 relay/]
+    D -->|NO| E[/J2_RELAY = PULSE_ON/]
     E -->F[/RPI_Power_Down_timer 15 sec. /]
     F -->G{Is any CAN frame received?}
     G -->|YES| H[CAN BUS runing, keep waiting]
