@@ -88,18 +88,21 @@ I'm grounding all the electronics to the factory grounding point near the lower 
 </table>
 
 One thing we really need to pay attention to is doing a proper, clean shutdown of the Raspberry Pi. Just pulling the power can easily corrupt the files on the SD card — or in our case, the SSD. To handle this, we added an Arduino Uno (a low-power little board) to the project. It takes care of monitoring the situation and makes sure the Raspberry Pi shuts down safely when needed.
-For this project, we selected the Raspberry Pi 5, which provides a dedicated ON/OFF power button and J2 header pins for an external switch. We decided to take advantage of this new feature by driving the J2 contacts with a relay. This approach lets us keep the Arduino code much simpler and frees up its processing power for other tasks. The flowcharts below detail the system start-up and shutdown sequence and control logic:
+For this project, we selected the Raspberry Pi 5, which provides a dedicated ON/OFF power button and J2 header pins for an external switch. We decided to take advantage of this new feature by driving the J2 contacts with a relay. This approach lets us keep the Arduino code much simpler and frees up its processing power for other tasks. 
+
+The idea is to build an Arduino CAN watchdog + power supervisor that only boots a Raspberry Pi after 10 seconds of continuous, healthy CAN traffic to ride through engine cranking and voltage chaos.The flowcharts below detail the system start-up and shutdown sequence and control logic:
 
 ```mermaid
 flowchart LR
-    A([Start: Arduino.ino]) --> B@{ shape: circle, label: "Loop start" }
-    B --> C{CAN BUS alive?}
-    C -->|YES| D[/Check CAN message/]
+    A([Start: Arduino init]) --> B[Enter loop: Arduino always on duty]
+    B --> C{Is any CAN frame received?}
+    C -->|YES| D[/Check VALID_MSG/]
     C -->|NO| B
     D --> F{Message ID Correct?}
     F -->|NO| D
-    F -->|YES| G[/10s buffer time/]
-    G -->H@{ shape: hex, label: "DC/DC 5.1V ON" }
+    F -->|YES| G[/VALIDATION_TIMER_RUNNING 10 sec. /]
+    G -->H@{ shape: hex, label: "Enable DC/DC 5.1V output" }
+    H -->J[Raspberry Pi starts]
 ```
 
 ## BOM of Hardware:
