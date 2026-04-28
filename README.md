@@ -103,6 +103,7 @@ flowchart LR
     J --oK@{ shape: odd, label: "FLAG: POWER_ENABLED" }
 ```
 Another important aspect we must pay close attention to is performing a proper, clean shutdown of the Raspberry Pi. Simply cutting the power can easily corrupt the files on the SD card — or in our case, the SSD. To handle this, the Arduino continuously monitors the system even after a successful startup and ensures that the Raspberry Pi shuts down safely when needed.
+
 For this project, we selected the Raspberry Pi 5, which provides a dedicated ON/OFF power button and J2 header pins for an external switch. We decided to take advantage of this new feature by driving the J2 contacts with a relay. This approach lets us keep the Arduino code much simpler and frees up its processing power for other tasks. The flowcharts below detail the system shutdown sequence and control logic with the assumption that the Raspberry Pi is already running (POWER_ENABLED flag being set to TRUE):
 
 ```mermaid
