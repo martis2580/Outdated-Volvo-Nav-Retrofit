@@ -110,16 +110,19 @@ For this project, we selected the Raspberry Pi 5, which provides a dedicated ON/
 flowchart LR
     A([POWER_ENABLED: TRUE])  -->C[/POWER_ON/]
     B([Enable DC/DC 5.1V output])  -->C[/POWER_ON/]
-    C -->D{IGN message is ON?}
+    C -->D{IGN_ON message received?}
     D -->|YES| C
-    D -->|NO| E[/J2_RELAY = PULSE_ON/]
-    E -->F[/RPI_Power_Down_timer 15 sec. /]
-    F -->G{Is any CAN frame received?}
-    G -->|YES| H[CAN BUS runing, keep waiting]
-    G -->|NO|J@{ shape: hex, label: "Disable DC/DC 5.1V output" }
-    J -->K[POWER_OFF]
-    K --oL@{ shape: odd, label: "POWER_ENABLED: FALSE"}
-    K -->M[Enter loop: Arduino always on duty]
+    D -->|NO| E[/Start 5s IGN Loss Timer/]
+    E -->F{IGN Loss Duration > 5s?}
+    F -->|NO| C
+    F -->|YES| G[/Trigger J2 Relay Pulse/]
+    G --> H[/Activate RPI_Power_Down_timer 15 sec./]
+    H -->J{Is any CAN frame received?}
+    J -->|YES| K[CAN BUS runing, keep waiting]
+    J -->|NO|L@{ shape: hex, label: "Disable DC/DC 5.1V output" }
+    L -->M[POWER_OFF]
+    M --oN@{ shape: odd, label: "POWER_ENABLED: FALSE"}
+    M -->O[Enter loop: Arduino always on duty]
 ```
 
 ## BOM of Hardware:
