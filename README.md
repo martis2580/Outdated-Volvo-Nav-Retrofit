@@ -95,10 +95,12 @@ flowchart LR
     B --> C{Is any CAN frame received?}
     C -->|YES| D[/Check VALID_MSG/]
     C -->|NO| B
-    D --> F{Message ID Correct?}
-    F -->|NO| D
-    F -->|YES| G[/VALIDATION_TIMER_RUNNING 10 sec. /]
-    G -->H@{ shape: hex, label: "Enable DC/DC 5.1V output" }
+    D --> E{Message IGN_ON ID Correct?}
+    E -->|NO| D
+    E -->|YES| F[/Activate count down timer 10 sec./]
+    F -->G{IGN_ON Active > 10s?}
+    G -->|NO| C
+    G -->|YES| H@{ shape: hex, label: "Enable DC/DC 5.1V output"}
     H -->J[Raspberry Pi starts]
     J --oK@{ shape: odd, label: "FLAG: POWER_ENABLED" }
 ```
