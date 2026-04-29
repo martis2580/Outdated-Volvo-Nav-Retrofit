@@ -127,6 +127,27 @@ flowchart LR
     M -->O[Enter loop: Arduino always on duty]
 ```
 
+NOTE: For CAN ID 0x217FFC, a value of 0x58 in Byte 5 indicates Ignition = ON in the Volvo S60 (P2):
+```mermaid
+---
+title: "CAN Message Mapping for 0x217FFC"
+---
+packet
+0-1: "SOF"
+2-29: "CAN IDENTIFIER (29): 0x217FFC"
+30-31: "Byte 0"
+32-33: "Byte 1"
+34-35: "Byte 2"
+36-37: "Byte 3"
+38-39: "Byte 4"
+40-46: "Byte 5 - 0x58 (IGN Status: ON)"
+47-48: "Byte 6"
+49-50: "Byte 7"
+51-52: "CRC"
+53-54: "ACK"
+55-56: "EOF"
+```
+
 ## BOM of Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
