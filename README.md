@@ -127,7 +127,7 @@ flowchart LR
     M -->O[Enter loop: Arduino always on duty]
 ```
 
-NOTE: For CAN ID 0x217FFC, a value of 0x58 in Byte 5 indicates Ignition = ON in the Volvo S60 (P2):
+NOTE: CAN ID 0x217FFC, a value of 0x58 in Byte 5 indicates Ignition = ON in the Volvo S60 (P2):
 ```mermaid
 ---
 title: "CAN Message Mapping for 0x217FFC"
