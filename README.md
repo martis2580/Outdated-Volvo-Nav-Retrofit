@@ -148,6 +148,8 @@ packet
 55-56: "EOF"
 ```
 
+Important: the Volvo P2 low-speed CAN communication bit rate is 125 kbps.
+
 ## BOM of Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
