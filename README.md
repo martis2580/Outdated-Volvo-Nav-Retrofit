@@ -160,6 +160,7 @@ Important: the Volvo P2 low-speed CAN communication bit rate is 125 kbps.
 - USB to LIN Interface [fischl](https://www.fischl.de/order/);
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
+- DC/DC STEP-DOWN converter module LM2596HV
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
 - OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
 
