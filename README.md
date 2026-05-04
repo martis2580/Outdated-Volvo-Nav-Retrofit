@@ -240,7 +240,7 @@ The stock Volvo display is an old-school 20th-century analog device, which actua
 ### RTI Display connectors pinout specifications:
 ||| Pin Numbering |
 | :---: | :---: | :---: |
-||| <img src="pics/RTI_connector.png" width="300"> |
+||| <img src="pics/RTI_connector.png" width="450"> |
 | Pin No. | Signal type | Other |
 | #1 | Color signal (red) | - |
 | #2 | Color signal (green) | - |
@@ -249,7 +249,7 @@ The stock Volvo display is an old-school 20th-century analog device, which actua
 | #5 | Signal, display remote control | - |
 | #6 | Color signal (blue) | - |
 | #7 | Screen ground, video signals | using in this project |
-| #8 | Composite sync. | Power supply |
+| #8 | Composite sync. | - |
 | #9 | - | - |
 | #10 | Video signal to display | using in this project |
 
