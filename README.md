@@ -252,6 +252,12 @@ The stock Volvo display is an old-school 20th-century analog device, which actua
 | #8 | Composite sync. | - |
 | #9 | - | - |
 | #10 | Video signal to display | using in this project |
+| / | / | / |
+| #1 | KL30 | 12V |
+| #2 | KL30 | 12V |
+| #3 | KL15 | Ignition |
+| #4 | KL31 | GND |
+| #5 | KL31 | GND |
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
