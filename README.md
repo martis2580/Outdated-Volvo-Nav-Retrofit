@@ -238,6 +238,20 @@ The stock Volvo display is an old-school 20th-century analog device, which actua
 </div>
 
 ### RTI Display connectors pinout specifications:
+||| Pin Numbering |
+| :---: | :---: | :---: |
+||| <img src="pics/RTI_connector.png" width="300"> |
+| Pin No. | Signal type | Other |
+| #1 | Color signal (red) | - |
+| #2 | Color signal (green) | - |
+| #3 | - | - |
+| #4 | Serial bus to the display | using in this project |
+| #5 | Signal, display remote control | - |
+| #6 | Color signal (blue) | - |
+| #7 | Screen ground, video signals | using in this project |
+| #8 | Composite sync. | Power supply |
+| #9 | - | - |
+| #10 | Video signal to display | using in this project |
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
