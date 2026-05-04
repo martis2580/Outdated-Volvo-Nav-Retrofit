@@ -9,6 +9,24 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 [![Printables](https://img.shields.io/badge/Printables-Techiejam-orange?style=for-the-badge&logo=Prusa)](https://www.printables.com/@Techiejam_2191647)
 
+## BOM of Hardware:
+- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
+- Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
+- USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
+- 2.5 Inch SSD Enclosures with USB 3.0 [UGREEN](https://ugreen.lk/product/ugreen-2-5-inch-sata-hdd-ssd-5gbps-hard-drive-enclosure-us221-30847-1-year-warranty/?srsltid=AfmBOortrrhXOcDRaFlARd_YokYD07JoaTn83PqAoa8J1XTD4yknzpjK);
+- USB 3.0 Y cable, Item No. 83176 [Delock](https://www.delock.com/produkt/83176/merkmale.html);
+- 4 port USB-A HUB, powered [Startech.com](https://www.startech.com/en-us/usb-hubs/h5a4a-usb-hub);
+- USB to LIN Interface [fischl](https://www.fischl.de/order/);
+- Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
+- CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
+- DC/DC STEP-DOWN converter module LM2596HV
+- OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
+- OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
+
+## Software:
+- OS Debian GNU/Linux 13 "Trixie";
+- Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
+
 ## The Power Logic
 Electronics is nothing more than wires and contacts :). With that in mind, extra care was taken with the physical power connections while integrating the retrofit DIY navigation system into the vehicle. In automotive environments, long-term reliability depends heavily on secure, well-fitting contacts. 
 In this project, I decided to power the RTI monitor and other electronic components directly from the passenger compartment fuse box, just like Volvo designed it from the factory. I also followed the genuine Volvo wiring diagram and kept the fuse layout the same as stock: F12 for the RTI display, F13 for the Raspberry Pi, and other components.
@@ -149,24 +167,6 @@ packet
 ```
 
 Important: the Volvo P2 low-speed CAN communication bit rate is 125 kbps.
-
-## BOM of Hardware:
-- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
-- Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
-- USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
-- 2.5 Inch SSD Enclosures with USB 3.0 [UGREEN](https://ugreen.lk/product/ugreen-2-5-inch-sata-hdd-ssd-5gbps-hard-drive-enclosure-us221-30847-1-year-warranty/?srsltid=AfmBOortrrhXOcDRaFlARd_YokYD07JoaTn83PqAoa8J1XTD4yknzpjK);
-- USB 3.0 Y cable, Item No. 83176 [Delock](https://www.delock.com/produkt/83176/merkmale.html);
-- 4 port USB-A HUB, powered [Startech.com](https://www.startech.com/en-us/usb-hubs/h5a4a-usb-hub);
-- USB to LIN Interface [fischl](https://www.fischl.de/order/);
-- Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
-- CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
-- DC/DC STEP-DOWN converter module LM2596HV
-- OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
-- OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
-
-## Software:
-- OS Debian GNU/Linux 13 "Trixie";
-- Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
 
 ## Making LIN Work
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons physically in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build:
