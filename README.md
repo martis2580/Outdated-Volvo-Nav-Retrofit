@@ -231,7 +231,7 @@ Important: Volvo LIN communication baud rate is 9600 bps.
 The stock Volvo display is an old-school 20th-century analog device, which actually makes it a great candidate for mods! It’s super easy to hook up to embedded gear like a Raspberry Pi, all you really need is to feed it a basic analog video signal. To pop the screen up and down, you just need to send the right commands over the serial line. Huge thanks to @TymEK49 for sharing the commands to control the RTI screen! [RTI_control](https://github.com/TymEK49/RTI_control)
 
 <div align="center">
-  <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="750">
+  <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="450">
   <br>
   <i>Volvo P2 RTI Display.</i>
   <br><br>
