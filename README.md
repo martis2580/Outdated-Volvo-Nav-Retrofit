@@ -263,7 +263,7 @@ To guarantee a solid connection to the RTI unit, I recommend using a stock OEM h
 
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
-The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so I had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the Pimoroni Audio DAC SHIM, which generates high-quality audio via the I2S interface.
+The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so I had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
