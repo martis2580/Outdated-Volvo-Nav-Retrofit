@@ -20,6 +20,8 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
 - DC/DC STEP-DOWN converter module LM2596HV
+- DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715)
+- GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm)
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
 - OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
 
@@ -263,7 +265,9 @@ To guarantee a solid connection to the RTI unit, I recommend using a stock OEM h
 
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
-The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so I had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
+The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so we had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
+
+The author also recommends a GPIO header adapter or a 90° connector to offset the Pimoroni Audio DAC. This clears the path for the active cooling setup, ensuring the fans can push fresh air across the SoC without any obstructions. For this build, we’re using the [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm) to keep the airflow path wide open.
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
