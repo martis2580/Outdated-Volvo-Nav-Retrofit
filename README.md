@@ -269,7 +269,7 @@ The headunit in this project is powered by a Raspberry Pi 5. As you might know, 
 
 The author also recommends a GPIO header adapter or a 90° connector to offset the Pimoroni Audio DAC. This clears the path for the active cooling setup, ensuring the fans can push fresh air across the SoC without any obstructions. For this build, we’re using the [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm) to keep the airflow path wide open.
 
-To play audio through a genuine Volvo sound system, one option is to use a [GROM audio adapter](https://gromaudio.com/store/usb_adapters/volvo-01-07-usb-android-iphone-car-integration-adapter-kit.html), as seen in this project. It mimics a CD changer and sends audio data to the AUM module via the MELBUS protocol.
+To play audio through a genuine Volvo sound system, one option is to use a [GROM audio adapter](https://gromaudio.com/store/usb_adapters/volvo-01-07-usb-android-iphone-car-integration-adapter-kit.html) (solution in this project). It mimics a CD changer and sends audio data to the AUM module via the MELBUS protocol.
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
