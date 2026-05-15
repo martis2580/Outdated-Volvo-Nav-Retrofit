@@ -269,7 +269,9 @@ The headunit in this project is powered by a Raspberry Pi 5. As you might know, 
 
 The author also recommends a GPIO header adapter or a 90° connector to offset the Pimoroni Audio DAC. This clears the path for the active cooling setup, ensuring the fans can push fresh air across the SoC without any obstructions. For this build, we’re using the [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm) to keep the airflow path wide open.
 
-To play audio through a genuine Volvo sound system, one option is to use a [GROM audio adapter](https://gromaudio.com/store/usb_adapters/volvo-01-07-usb-android-iphone-car-integration-adapter-kit.html) (solution in this project). It mimics a CD changer and sends audio data to the AUM module via the MELBUS protocol.
+First, a quick bit of background: MELBUS (Mitsubishi Electronic Bus) is the proprietary communication protocol Volvo uses to let the main head unit talk to peripherals like factory CD changers, MD players, or RTI navigation units. To get external audio playing through a stock Volvo sound system, one of the cleanest approaches is using a [GROM audio adapter](https://gromaudio.com/store/usb_adapters/volvo-01-07-usb-android-iphone-car-integration-adapter-kit.html) (which is exactly what I went with for this project). It basically tricks the car into thinking a factory CD changer is hooked up, allowing you to feed audio straight into the AUM over the MELBUS line without losing that stock look and feel.
+
+Below is attached electrical schematic showing how the Pimoroni Audio DAC and GROM audio adapter is integrated into the Volvo P2 vehicle:
 
 ## The "Black Box" Build
 The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
