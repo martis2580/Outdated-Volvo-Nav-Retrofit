@@ -183,6 +183,9 @@ This isn’t straightforward, though. In vehicles without the factory-installed 
 
 <img src="pics/LIN_bus_sniffing.png" alt="LIN bus sniffing Wiring Diagram" width="1500">
 
+Note:
+USB differential lines should be kept as short as possible because USB is a high-speed interface sensitive to signal distortion, reflections, and EMI. Poor routing, long traces, or impedance mismatches can quickly degrade signal integrity and cause communication errors. For noisy or long-distance environments, LIN is a more robust bus.
+
 ### Vehicle-side connector pinout specifications.
 
 || Location | Pin Numbering |
