@@ -235,10 +235,20 @@ The stock Volvo display is an old-school 20th-century analog device, which actua
 To guarantee a solid connection to the RTI unit, I recommend using a stock OEM harness salvaged from a used car.
 
 <div align="center">
-  <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="250">
-  <br>
-  <i>Volvo P2 RTI Display.</i>
-  <br><br>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="250">
+        <br>
+        <i>Volvo P2 RTI Display.</i>
+      </td>
+      <td align="center">
+        <img src="pics/OEM_RTI_harness.jpg" width="250">
+        <br>
+        <i>OEM Wiring Harness.</i>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ### RTI Display connectors pinout specifications:
