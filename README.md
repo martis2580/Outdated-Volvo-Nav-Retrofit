@@ -292,7 +292,7 @@ Here’s the clean Pi 5 setup for a PCM5100A I2S DAC.
 
 ```markdown
 # Disable onboard analog audio
-#dtparam=audio=on
+# dtparam=audio=on
 
 # Enable I2S
 dtparam=i2s=on
