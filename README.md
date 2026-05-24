@@ -297,7 +297,7 @@ First, a quick bit of background: MELBUS (Mitsubishi Electronic Bus) is the prop
 Below is attached electrical schematic showing how the Pimoroni Audio DAC and GROM audio adapter is integrated into the Volvo P2 vehicle:
 ...
 
-Here’s the clean Pi 5 setup for a PCM5100A I2S DAC.
+Here’s the clean Pi 5 setup for a PCM5100A I2S DAC:
 /boot/firmware/config.txt
 
 ```markdown
@@ -309,6 +309,19 @@ dtparam=i2s=on
 
 # Generic passive I2S DAC overlay
 dtoverlay=i2s-dac
+```
+
+Here’s the HUDIY main_configuration.json setup for playing audio through a DAC:
+```markdown
+"sound": {
+  "volumeSinkName": "alsa_output.platform-soc_107c000000_sound.stereo-fallback",
+  "playbackSinkName": "alsa_output.platform-soc_107c000000_sound.stereo-fallback"
+}
+```
+NOTE: ''alsa_output.platform-soc_107c000000_sound.stereo-fallback'' is the audio sink name for your DAC in PipeWire/PulseAudio terms. You can find it in your case with this simple command:
+
+```markdown
+pactl list sinks
 ```
 
 ## The "Black Box" Build
