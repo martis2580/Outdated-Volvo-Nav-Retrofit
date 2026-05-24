@@ -291,7 +291,6 @@ Here’s the clean Pi 5 setup for a PCM5100A I2S DAC.
 /boot/firmware/config.txt
 
 ```markdown
-```ini
 # Disable onboard analog audio
 #dtparam=audio=on
 
@@ -300,7 +299,6 @@ dtparam=i2s=on
 
 # Generic passive I2S DAC overlay
 dtoverlay=i2s-dac
-```
 ```
 
 ## The "Black Box" Build
