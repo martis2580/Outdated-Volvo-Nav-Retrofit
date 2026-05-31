@@ -272,13 +272,13 @@ To guarantee a solid connection to the RTI unit, I recommend using a stock OEM h
 | #1 | Color signal (red) | - |
 | #2 | Color signal (green) | - |
 | #3 | - | - |
-| #4 | Serial bus to the display | using in this project |
+| #4 | Serial bus to the display | using in this project (wire color: pink) |
 | #5 | Signal, display remote control | - |
 | #6 | Color signal (blue) | - |
-| #7 | Screen ground, video signals | using in this project |
+| #7 | Screen ground, video signals | using in this project (wire color: black) |
 | #8 | Composite sync. | - |
 | #9 | - | - |
-| #10 | Video signal to display | using in this project |
+| #10 | Video signal to display | using in this project (wire color: white) |
 | / | / | / |
 | #1 | KL30 | 12V |
 | #2 | KL30 | 12V |
