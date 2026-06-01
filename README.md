@@ -286,6 +286,13 @@ To guarantee a solid connection to the RTI unit, I recommend using a stock OEM h
 | #4 | KL31 | GND |
 | #5 | KL31 | GND |
 
+Here’s the clean Pi 5 setup to turn on composite output in /boot/firmware/config.txt
+
+```markdown
+# Enable DRM VC4 V3D driver
+dtoverlay=vc4-kms-v3d,composite
+```
+
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
 The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so we had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
