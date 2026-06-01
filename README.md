@@ -293,6 +293,11 @@ Here’s the clean Pi 5 setup to turn on composite output in /boot/firmware/conf
 dtoverlay=vc4-kms-v3d,composite
 ```
 
+Set NTSC in/boot/firmware/cmdline.txton the same single line:
+```markdown
+video=Composite-1:720x480i,tv_mode=NTSC
+```
+
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
 The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so we had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
