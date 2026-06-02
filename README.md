@@ -294,20 +294,13 @@ dtoverlay=vc4-kms-v3d,composite
 
 # Disable compensation for displays with overscan
 disable_overscan=0
-
-# Uncomment the following to adjest overscan. Use positive numbers if console 
-# goes off screen and negative if there is too much border
-overscan_left=10
-overscan_right=10
-overscan_top=5 
-overscan_bottom=5 
 ```
 
 Set PAL in/boot/firmware/cmdline.txton the same single line:
 ```markdown
 video=Composite-1:720x576i,tv_mode=PAL
 ```
-Note:
+Note: PAL uses a higher resolution (720 × 576), so no black border appears around the RTI display in these cases.
 
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
