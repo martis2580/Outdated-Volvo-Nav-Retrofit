@@ -291,6 +291,16 @@ Here’s the clean Pi 5 setup to turn on composite output in /boot/firmware/conf
 ```markdown
 # Enable DRM VC4 V3D driver
 dtoverlay=vc4-kms-v3d,composite
+
+# Disable compensation for displays with overscan
+disable_overscan=0
+
+# Uncomment the following to adjest overscan. Use positive numbers if console 
+# goes off screen and negative if there is too much border
+overscan_left=10
+overscan_right=10
+overscan_top=5 
+overscan_bottom=5 
 ```
 
 Set PAL in/boot/firmware/cmdline.txton the same single line:
