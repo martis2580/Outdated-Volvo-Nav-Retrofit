@@ -295,7 +295,7 @@ dtoverlay=vc4-kms-v3d,composite
 
 Set NTSC in/boot/firmware/cmdline.txton the same single line:
 ```markdown
-video=Composite-1:720x480i,tv_mode=NTSC
+video=Composite-1:720x576i,tv_mode=PAL
 ```
 
 ## Building a Bridge Between My New Headunit and Factory Audio system
