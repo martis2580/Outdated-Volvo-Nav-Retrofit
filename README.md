@@ -293,10 +293,11 @@ Here’s the clean Pi 5 setup to turn on composite output in /boot/firmware/conf
 dtoverlay=vc4-kms-v3d,composite
 ```
 
-Set NTSC in/boot/firmware/cmdline.txton the same single line:
+Set PAL in/boot/firmware/cmdline.txton the same single line:
 ```markdown
 video=Composite-1:720x576i,tv_mode=PAL
 ```
+Note:
 
 ## Building a Bridge Between My New Headunit and Factory Audio system
 
