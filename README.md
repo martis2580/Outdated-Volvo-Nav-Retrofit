@@ -95,6 +95,8 @@ C -->|9V| G(Arduino Uno)
 ```
 
 NOTE: To prevent +5.1 V backfeeding into the Raspberry Pi USB port, the USB 3.0 Y cable (Item No. 83176) needs a simple physical modification. For this setup, the author cut the red wire (+5 V) on the USB branch connected to the Raspberry Pi. Additionally, increasing the USB boot delay in the EEPROM configuration is also recommended:
+
+[sudo rpi-eeprom-config --edit]
 ```markdown
 BOOT_UART=1
 POWER_OFF_ON_HALT=0
@@ -102,6 +104,8 @@ BOOT_ORDER=0xf461
 PSU_MAX_CURRENT=5000
 USB_MSD_STARTUP_DELAY=3000
 ```
+
+We're using a non-official PSU here. To prevent the Pi from throttling USB current, you need to manually modify the EEPROM. Throw PSU_MAX_CURRENT=5000 into the bootloader config to force-enable the 5A power profile.
 
 I'm grounding all the electronics to the factory grounding point near the lower door hinge:
 <table>
