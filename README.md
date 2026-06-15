@@ -317,10 +317,16 @@ First, a quick bit of background: MELBUS (Mitsubishi Electronic Bus) is the prop
 Below is attached electrical schematic showing how the Pimoroni Audio DAC and GROM audio adapter is integrated into the Volvo P2 vehicle:
 
 <div align="center">
-  <img src="pics/Audio_schematic.png" width="550">
+  <img src="pics/Audio_schematic.png" width="850">
   <br>
-  <i>This installation guide is based on Grom Audio technical documentation [GROM Interface Installation into Volvo 01-06] (https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l).</i>
-  <br><br> </div>
+  <i>
+    This installation guide is based on
+    <a href="[https://gromaudio.com/docs/volvo_instructions_ptap.pdf](https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l)">
+      GROM Audio technical documentation [GROM Interface Installation into Volvo 01-06]
+    </a>.
+  </i>
+  <br><br>
+</div>
 
 Here’s the clean Pi 5 setup for a PCM5100A I2S DAC:
 /boot/firmware/config.txt
