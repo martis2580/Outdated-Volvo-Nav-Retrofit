@@ -321,8 +321,8 @@ Below is attached electrical schematic showing how the Pimoroni Audio DAC and GR
   <br>
   <i>
     This installation guide is based on
-    <a href="[https://gromaudio.com/docs/volvo_instructions_ptap.pdf](https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l)">
-      GROM Audio technical documentation [GROM Interface Installation into Volvo 01-06]
+    <a href="[https://gromaudio.com/docs/volvo_instructions_ptap.pdf]">
+      GROM Audio technical documentation [GROM Interface Installation into Volvo 01-06] (https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l)
     </a>.
   </i>
   <br><br>
