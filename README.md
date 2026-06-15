@@ -315,7 +315,12 @@ The author also recommends a GPIO header adapter or a 90° connector to offset t
 First, a quick bit of background: MELBUS (Mitsubishi Electronic Bus) is the proprietary communication protocol Volvo uses to let the main head unit talk to peripherals like factory CD changers, MD players, or RTI navigation units. To get external audio playing through a stock Volvo sound system, one of the cleanest approaches is using a [GROM audio adapter](https://gromaudio.com/store/usb_adapters/volvo-01-07-usb-android-iphone-car-integration-adapter-kit.html) (which is exactly what I went with for this project). It basically tricks the car into thinking a factory CD changer is hooked up, allowing you to feed audio straight into the AUM over the MELBUS line without losing that stock look and feel.
 
 Below is attached electrical schematic showing how the Pimoroni Audio DAC and GROM audio adapter is integrated into the Volvo P2 vehicle:
-...
+
+<div align="center">
+  <img src="pics/Audio_schematic.png" width="550">
+  <br>
+  <i>This installation guide is based on Grom Audio technical documentation [GROM Interface Installation into Volvo 01-06] (https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l).</i>
+  <br><br> </div>
 
 Here’s the clean Pi 5 setup for a PCM5100A I2S DAC:
 /boot/firmware/config.txt
