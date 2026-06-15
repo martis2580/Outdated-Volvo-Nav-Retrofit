@@ -320,13 +320,8 @@ Below is attached electrical schematic showing how the Pimoroni Audio DAC and GR
   <img src="pics/Audio_schematic.png" width="850">
 </div>
 
-<div align="center">
-  <img src="pics/Audio_schematic.png" width="550" alt="Audio schematic">
-</div>
-
-This installation guide is based on the  
-GROM Audio technical documentation:
-[GROM Audio Volvo Installation Guide (PDF)]([https://gromaudio.com/docs/volvo_instructions_ptap.pdf](https://gromaudio.com/docs/volvo_instructions_ptap.pdf](https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l))
+This installation guide is based on the GROM Audio technical documentation:
+[GROM Audio Volvo Installation Guide](https://gromaudio.com/docs/volvo_instructions_ptap.pdf](https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l))
 
 Here’s the clean Pi 5 setup for a PCM5100A I2S DAC:
 /boot/firmware/config.txt
