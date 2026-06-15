@@ -268,7 +268,7 @@ To guarantee a solid connection to the RTI unit, I recommend using a stock OEM h
   </table>
 </div>
 
-### RTI Display connectors pinout specifications:
+### RTI Display connectors pinout specification:
 ||| Pin Numbering |
 | :---: | :---: | :---: |
 ||| <img src="pics/RTI_connector.png" width="450"> |
@@ -306,7 +306,7 @@ video=Composite-1:720x576i,tv_mode=PAL
 ```
 Note: PAL uses a higher resolution (720 × 576), so no black border appears around the RTI display in these cases.
 
-## Building a Bridge Between My New Headunit and Factory Audio system
+## Building a Bridge Between New Headunit and Factory Audio system
 
 The headunit in this project is powered by a Raspberry Pi 5. As you might know, the Pi 5 doesn't have an onboard audio jack, so we had to find a way to get sound out of it. While there are many ways to do this, I decided to go with the [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715), which generates high-quality audio via the I2S interface.
 
