@@ -19,7 +19,7 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 - USB to LIN Interface [fischl](https://www.fischl.de/order/);
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
-- DC/DC STEP-DOWN converter module LM2596HV
+- DC/DC STEP-DOWN converter module [NSD10-12S5](https://www.meanwell.com/webapp/product/search.aspx?prod=NSD10-S)
 - DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715)
 - GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm)
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
