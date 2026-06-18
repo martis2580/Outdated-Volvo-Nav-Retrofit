@@ -104,7 +104,7 @@ A[Volvo FuseBox, F13_KL30] -->|12V| B(DC/DC 5.1V)
 A[Volvo FuseBox, F13_KL30] -->|12V| C(DC/DC 9V)
 B -->|5.1V| D(RaspberryPi 5)
 B -->|5.1V| E(USB 3.0 Y cable)-->|5.1V| F(SSD)
-C -->|9V| G(Arduino Uno)
+C -->|5V Always-On| G(Arduino Uno)
 ```
 
 NOTE: To prevent +5.1 V backfeeding into the Raspberry Pi USB port, the USB 3.0 Y cable (Item No. 83176) needs a simple physical modification. For this setup, the author cut the red wire (+5 V) on the USB branch connected to the Raspberry Pi. Additionally, increasing the USB boot delay in the EEPROM configuration is also recommended:
