@@ -9,14 +9,14 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 [![Printables](https://img.shields.io/badge/Printables-Techiejam-orange?style=for-the-badge&logo=Prusa)](https://www.printables.com/@Techiejam_2191647)
 
-## Problem
+### Problem
 Older Volvo RTI navigation systems are obsolete:
 - outdated maps
 - poor UI
 - limited connectivity
 - expensive updates
 
-## Solution
+### Solution
 This project retrofits the original display with a modern computing platform while preserving OEM integration:
 - Steering wheel controls
 - Automatic screen deployment
