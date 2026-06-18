@@ -9,6 +9,19 @@ Designed specifically for Volvo P2 models lacking the factory-installed RTI navi
 
 [![Printables](https://img.shields.io/badge/Printables-Techiejam-orange?style=for-the-badge&logo=Prusa)](https://www.printables.com/@Techiejam_2191647)
 
+## Problem
+Older Volvo RTI navigation systems are obsolete:
+- outdated maps
+- poor UI
+- limited connectivity
+- expensive updates
+
+## Solution
+This project retrofits the original display with a modern computing platform while preserving OEM integration:
+- Steering wheel controls
+- Automatic screen deployment
+- Android Auto / CarPlay
+
 ## BOM of Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
