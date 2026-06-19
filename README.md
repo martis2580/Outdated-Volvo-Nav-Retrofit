@@ -37,6 +37,7 @@ This project retrofits the original display with a modern computing platform whi
 - GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm)
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
 - OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
+- FAKRA coaxial cable assembly 50 Ω [TE Connectivity](https://www.te.com/en/product-2-2360000-1.html) or equivalent;
 
 ## Software:
 - OS Debian GNU/Linux 13 "Trixie";
