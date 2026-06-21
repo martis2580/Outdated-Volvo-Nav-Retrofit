@@ -337,6 +337,20 @@ Below is attached electrical schematic showing how the Pimoroni Audio DAC and GR
 This installation guide is based on the GROM Audio technical documentation:
 [GROM Audio Volvo Installation Guide](https://gromaudio.com/docs/volvo_instructions_ptap.pdf?srsltid=AfmBOorDYwaaDvV_aZzB2qHW27C3vlAD73VM9NC2m9aTEWJtBz8DwV1l))
 
+### GROM audio EXT2 connector pinout specification:
+||| Pin Numbering |
+| :---: | :---: | :---: |
+||| <img src="pics/GROM_pinout.png" width="450"> |
+| Pin No. | Signal type | Other |
+| #1 | Left Audio (L) | - |
+| #2 | Right Audio (R) | - |
+| #3 | - | - |
+| #4 | - | - |
+| #5 | Ground (GND) | 3.5 mm Sleeve |
+| #6 | - | - |
+| #7 | - | - |
+| #8 | - | - |
+
 Here’s the clean Pi 5 setup for a PCM5100A I2S DAC:
 /boot/firmware/config.txt
 
