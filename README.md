@@ -44,7 +44,7 @@ This project retrofits the original display with a modern computing platform whi
 - OS Debian GNU/Linux 13 "Trixie";
 - Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
 
-## Main Electrical Diagram
+## Wiring Diagram
 
 <p align="center">
   <img src="pics/Raspi_circuit.jpg" width="900">
