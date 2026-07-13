@@ -31,6 +31,7 @@ This project retrofits the original display with a modern computing platform whi
 - 4 port USB-A HUB, powered [Startech.com](https://www.startech.com/en-us/usb-hubs/h5a4a-usb-hub);
 - USB to LIN Interface [fischl](https://www.fischl.de/order/);
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
+- DC 5V Relay Module 1-Channel Relay Switch with Optocoupler [dac.ge](https://dac.ge/en/?product=45782);
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
 - DC/DC STEP-DOWN converter module [NSD10-12S5](https://www.meanwell.com/webapp/product/search.aspx?prod=NSD10-S)
 - DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715)
