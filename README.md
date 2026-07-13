@@ -44,6 +44,14 @@ This project retrofits the original display with a modern computing platform whi
 - OS Debian GNU/Linux 13 "Trixie";
 - Hudiy infotainment system software, [github](https://github.com/wiboma/hudiy);
 
+## Main Electrical Diagram
+
+<p align="center">
+  <img src="pics/Raspi_circuit.jpg" width="900">
+</p>
+
+📄 **Full resolution:** [Main Electrical Diagram (JPG)](pics/Raspi_circuit.jpg)
+
 ## The Power Management + Hardware Supervisor
 Electronics is nothing more than wires and contacts :). With that in mind, extra care was taken with the physical power connections while integrating the retrofit DIY navigation system into the vehicle. In automotive environments, long-term reliability depends heavily on secure, well-fitting contacts. 
 In this project, I decided to power the RTI monitor and other electronic components directly from the passenger compartment fuse box, just like Volvo designed it from the factory. I also followed the genuine Volvo wiring diagram and kept the fuse layout the same as stock: F12 for the RTI display, F13 for the Raspberry Pi, and other components.
