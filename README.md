@@ -221,6 +221,21 @@ The schematic below shows the modifications implemented by the author. It is not
   <i>Power supply modification for external 5 V DC/DC module.</i>
   <br><br> </div>
 
+Final assembly: The completed CAN watchdog and power supervisor unit installed inside the Volvo OEM RTI display housing. The enclosure was originally designed to accommodate the factory speaker, making it an ideal location for the additional electronics.
+
+<table>
+  <tr>
+    <td align="left">
+      <img src="pics/Power_supervisor_unit_connectors.jpg" width="500"/><br>
+      Final assembly showing the external interfaces: Power Input, CAN Bus, USB (Programming), and Composite Video (PAL)
+    </td>
+    <td align="left">
+      <img src="pics/Arduino_into_RTI.jpg="500"/><br>
+      Top view of the assembled CAN watchdog and power supervisor unit installed inside the Volvo OEM RTI display enclosure.
+    </td>
+  </tr>
+</table>
+
 ## Making LIN Work
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons physically in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build:
 
