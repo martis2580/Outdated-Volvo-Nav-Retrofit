@@ -215,6 +215,12 @@ The Arduino-based CAN watchdog and power supervisor is built using an Arduino Un
 
 The schematic below shows the modifications implemented by the author. It is not intended to be the only correct solution—just one practical implementation that satisfies the design requirements. Feel free to adapt or redesign the hardware to better suit your own application.
 
+<div align="center">
+  <img src="pics/Arduino_power_supply_circuit_2.jpg" width="450">
+  <br>
+  <i>Power supply modification for external 5 V DC/DC module.</i>
+  <br><br> </div>
+
 ## Making LIN Work
 The goal of this project is to retrofit the stock low-res RTI monitor with its simple non-touch LCD. Since there’s no touchscreen, the steering wheel buttons are essential for navigating and controlling the display. There are two ways to get those buttons physically in place: replace the entire wheel, or fit just the nav button module. I chose the second option for this pilot build:
 
