@@ -230,7 +230,7 @@ Final assembly: The completed CAN watchdog and power supervisor unit installed i
       Final assembly showing the external interfaces: Power Input, CAN Bus, USB (Programming), and Composite Video (PAL)
     </td>
     <td align="left">
-      <img src="pics/Arduino_into_RTI.jpg="500"/><br>
+      <img src="pics/Arduino_into_RTI.jpg" width="500"/><br>
       Top view of the assembled CAN watchdog and power supervisor unit installed inside the Volvo OEM RTI display enclosure.
     </td>
   </tr>
