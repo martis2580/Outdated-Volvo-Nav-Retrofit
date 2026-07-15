@@ -418,5 +418,24 @@ pactl list sinks
 ```
 
 ## The "Black Box" Build
-The idea: a total stealth install, tucking all the custom display hardware right into the factory Phone Module 'ditch' for that clean look.
+The Goal: A completely stealth installation, tucking all the Raspberry Pi hardware directly into the factory phone module compartment for a clean, OEM look. The design must also provide easy access to all components, ensuring they are securely fastened using screws or cable ties. Additionally, a screw-secured front lid will provide quick access to the Raspberry Pi’s shutdown button and USB ports.
+
+Here is the final setup:
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="250">
+        <br>
+        <i>Side view.</i>
+      </td>
+      <td align="center">
+        <img src="pics/OEM_RTI_harness.jpg" width="250">
+        <br>
+        <i> Front view.</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
