@@ -425,12 +425,12 @@ Here is the final setup:
   <table>
     <tr>
       <td align="center">
-        <img src="https://github.com/martis2580/Outdated-Volvo-Nav-Retrofit/blob/main/pics/RTI_Display.png" width="250">
+        <img src="pics/R_Pi_assy.jpg" width="350">
         <br>
         <i>Side view.</i>
       </td>
       <td align="center">
-        <img src="pics/OEM_RTI_harness.jpg" width="250">
+        <img src="pics/R_Pi_assy_front.png" width="350">
         <br>
         <i> Front view.</i>
       </td>
