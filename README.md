@@ -425,12 +425,12 @@ Here is the final setup:
   <table>
     <tr>
       <td align="center">
-        <img src="pics/R_Pi_assy.jpg" width="350">
+        <img src="pics/R_Pi_assy.jpg" width="500">
         <br>
         <i>Side view.</i>
       </td>
       <td align="center">
-        <img src="pics/R_Pi_assy_front.png" width="350">
+        <img src="pics/R_Pi_assy_front.png" width="500">
         <br>
         <i> Front view.</i>
       </td>
