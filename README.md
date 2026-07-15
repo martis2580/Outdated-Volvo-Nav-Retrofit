@@ -287,7 +287,7 @@ USB differential lines should be kept as short as possible because USB is a high
 | CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="pics/CLL_ANSWR_LIN.png" width="400"> |
 | CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="400"> |
 
-This data is reverse-engineered and may vary depending on vehicle model or manufacturer.
+This data is reverse-engineered and may vary depending on vehicle model or manufacturer. Volvo P2 S60 LIN communication baud rate is 9600 bps.
 
 All LIN bus data in this project was captured using the
 **[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)** and **[PulseView logic analyzer](https://sigrok.org/wiki/PulseView)**.
@@ -295,9 +295,8 @@ All LIN bus data in this project was captured using the
 ### Software Support
 - Python library: **[pyUSBlini](https://github.com/EmbedME/pyUSBlini)**
 
-Important: Volvo LIN communication baud rate is 9600 bps.
-
-- 📖 [Raspberry Pi LIN Setup](docs/raspberry-pi-lin-setup.md)
+More about set up:
+📖 [Raspberry Pi LIN Setup](docs/raspberry-pi-lin-setup.md)
 
 ## Bringing the Volvo Pop-up Screen Back to Life
 
