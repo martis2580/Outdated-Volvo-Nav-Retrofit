@@ -35,6 +35,7 @@ This project retrofits the original display with a modern computing platform whi
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
 - DC/DC STEP-DOWN converter module [NSD10-12S5](https://www.meanwell.com/webapp/product/search.aspx?prod=NSD10-S)
 - DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715)
+- Ground Loop Isolator [PLS00548](https://lt.farnell.com/pulse/pls00548/ground-loop-isolator-3-5mm-p-s/dp/3402208)
 - GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm)
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
 - OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
