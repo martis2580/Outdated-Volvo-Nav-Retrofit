@@ -371,7 +371,7 @@ First, a quick bit of background: MELBUS (Mitsubishi Electronic Bus) is the prop
 Below is attached electrical schematic showing how the Pimoroni Audio DAC and GROM audio adapter is integrated into the Volvo P2 vehicle:
 
 <div align="center">
-  <img src="pics/Audio_schematic.png" width="850">
+  <img src="pics/Audio_schematic_w_gnd_isolator.jpg" width="850">
 </div>
 
 This installation guide is based on the GROM Audio technical documentation:
