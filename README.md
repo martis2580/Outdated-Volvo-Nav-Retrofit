@@ -1,6 +1,6 @@
 # Outdated-Volvo-P2-Nav-Retrofit-Guide-for-Android-Auto-Multimedia
 > [!IMPORTANT]
-> **Project Status: Work in Progress (WIP)**
+> **Project Status: Field Testing (FT)**
 ...
 
 Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
