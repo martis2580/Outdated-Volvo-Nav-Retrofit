@@ -147,9 +147,10 @@ To achieve more robust power management in this project, we implemented an Ardui
 
 ```mermaid
 flowchart LR
-    A([Start: Arduino init]) --> B[Enter loop: Arduino always on duty]
+    A([Start: Arduino init]) --> B[Enter loop: Arduino always on sleep mode]
     B --> C{Is any CAN frame received?}
-    C -->|YES| D[/Check VALID_MSG/]
+    C -->|YES| L[/Execute ISR INT0 & Disable Sleep/]
+    L --> D[/Check VALID_MSG/]
     C -->|NO| B
     D --> E{Message IGN_ON ID Correct?}
     E -->|NO| D
