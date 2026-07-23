@@ -23,7 +23,7 @@ This project retrofits the original display with a modern computing platform whi
 - Android Auto / CarPlay
 
 ## BOM of Hardware:
-- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler;
+- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler + RPi RTC Battery;
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
 - USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
 - 2.5 Inch SSD Enclosures with USB 3.0 [UGREEN](https://ugreen.lk/product/ugreen-2-5-inch-sata-hdd-ssd-5gbps-hard-drive-enclosure-us221-30847-1-year-warranty/?srsltid=AfmBOortrrhXOcDRaFlARd_YokYD07JoaTn83PqAoa8J1XTD4yknzpjK);
@@ -33,10 +33,10 @@ This project retrofits the original display with a modern computing platform whi
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
 - DC 5V Relay Module 1-Channel Relay Switch with Optocoupler [dac.ge](https://dac.ge/en/?product=45782);
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
-- DC/DC STEP-DOWN converter module [NSD10-12S5](https://www.meanwell.com/webapp/product/search.aspx?prod=NSD10-S)
-- DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715)
-- Ground Loop Isolator [PLS00548](https://lt.farnell.com/pulse/pls00548/ground-loop-isolator-3-5mm-p-s/dp/3402208)
-- GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm)
+- DC/DC STEP-DOWN converter module [NSD10-12S5](https://www.meanwell.com/webapp/product/search.aspx?prod=NSD10-S);
+- DAC (Digital-to-Analog Converter) [Pimoroni Audio DAC SHIM](https://shop.pimoroni.com/products/audio-dac-shim-line-out?variant=32343184965715);
+- Ground Loop Isolator [PLS00548](https://lt.farnell.com/pulse/pls00548/ground-loop-isolator-3-5mm-p-s/dp/3402208);
+- GPIO adapter [Waveshare Raspberry Pi 400 adapter](https://www.waveshare.com/pi400-gpio-adapter-a.htm);
 - OEM Volvo Steering Wheel Nav Controls [used car parts](https://www.volvopartswebstore.com/products/1179711/8685489.html);
 - OEM Volvo RTI screen [used car parts](https://www.volvopartswebstore.com/products/Volvo/2005/S60-24l-5-cylinder/GPS-Navigation-System/1121718/30775626.html);
 - FAKRA coaxial cable assembly 50 Ω [TE Connectivity](https://www.te.com/en/product-2-2360000-1.html) or equivalent;
