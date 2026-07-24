@@ -181,7 +181,7 @@ flowchart LR
     J -->|NO|L@{ shape: hex, label: "Disable DC/DC 5.1V output" }
     L -->M[POWER_OFF]
     M --oN@{ shape: odd, label: "POWER_ENABLED: FALSE"}
-    M -->O[Enter loop: Arduino always on duty]
+    M -->O[Arduino goes to sleep mode]
 ```
 
 NOTE: CAN ID 0x217FFC, a value of 0x58 in Byte 5 indicates Ignition = ON in the Volvo S60 (P2):
