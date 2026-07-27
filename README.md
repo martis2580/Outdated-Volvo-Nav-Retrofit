@@ -289,10 +289,15 @@ USB differential lines should be kept as short as possible because USB is a high
 | CLL_ANSWR    | `0x01` | `2F 00`   | Answer call        | <img src="pics/CLL_ANSWR_LIN.png" width="400"> |
 | CLL_HNG_UP   | `0x01` | `1F 00`   | Hang up call       | <img src="pics/CLL_HNG_UP_LIN.png" width="400"> |
 
-This data is reverse-engineered and may vary depending on vehicle model or manufacturer. Volvo P2 S60 LIN communication baud rate is 9600 bps.
-
 All LIN bus data in this project was captured using the
 **[USBlini USB-to-LIN interface](https://www.fischl.de/usblini/)** and **[PulseView logic analyzer](https://sigrok.org/wiki/PulseView)**.
+
+This data is reverse-engineered and may vary depending on vehicle model or manufacturer. Volvo P2 S60 LIN communication baud rate is 9600 bps, frame ID - 0x01.
+
+[bridge.py]
+A Python-based hardware-to-software bridge designed for Raspberry Pi. It captures Volvo Local Interconnect Network (LIN) bus messages via a USBlini adapter and translates OEM steering wheel button presses into virtual Linux keyboard inputs (uinput) for seamless control of the Hudiy media interface. To maximize full control over Hudiy using a limited number of OEM steering wheel buttons, the bridge implements a long-press state machine:
+- Left Arrow (0x3F, 0x02): Short tap outputs KEY_LEFT, while holding for $\ge 700\text{ ms}$ triggers scroll_left_1 (outputs KEY_1). 
+- Right Arrow (0x3F, 0x01): Short tap outputs KEY_RIGHT, while holding for $\ge 700\text{ ms}$ triggers scroll_right_2 (outputs KEY_2).
 
 ### Software Support
 - Python library: **[pyUSBlini](https://github.com/EmbedME/pyUSBlini)**
