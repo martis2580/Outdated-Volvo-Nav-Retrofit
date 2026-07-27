@@ -294,8 +294,8 @@ USB differential lines should be kept as short as possible because USB is a high
 
 This data is reverse-engineered and may vary depending on vehicle model or manufacturer. Volvo P2 S60 LIN communication baud rate is 9600 bps, frame ID - 0x01.
 
-[bridge.py]
-A Python-based hardware-to-software bridge designed for Raspberry Pi. It captures Volvo Local Interconnect Network (LIN) bus messages via a USBlini adapter and translates OEM steering wheel button presses into virtual Linux keyboard inputs (uinput) for seamless control of the Hudiy media interface. To maximize full control over Hudiy using a limited number of OEM steering wheel buttons, the bridge implements a long-press state machine:
+[`bridge.py`](bridge.py)
+A Python-based hardware-to-software bridge script designed for Raspberry Pi. It captures Volvo Local Interconnect Network (LIN) bus messages via a USBlini adapter and translates OEM steering wheel button presses into virtual Linux keyboard inputs (uinput) for seamless control of the Hudiy media interface. To maximize full control over Hudiy using a limited number of OEM steering wheel buttons, the bridge implements a long-press state machine:
 - Left Arrow (0x3F, 0x02): Short tap outputs KEY_LEFT, while holding for $\ge 700\text{ ms}$ triggers scroll_left_1 (outputs KEY_1). 
 - Right Arrow (0x3F, 0x01): Short tap outputs KEY_RIGHT, while holding for $\ge 700\text{ ms}$ triggers scroll_right_2 (outputs KEY_2).
 
