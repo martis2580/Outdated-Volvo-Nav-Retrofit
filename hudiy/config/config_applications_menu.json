@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "contacts",
+      "action": "contacts",
+      "label": "Contacts"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "contacts",
+      "action": "favorite_contacts",
+      "label": "Favorites"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "dialpad",
+      "action": "dialpad",
+      "label": "Dialpad"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "call_log",
+      "action": "calls_history",
+      "label": "Call log"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "phone_in_talk",
+      "action": "active_call",
+      "label": "Active call"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "notifications",
+      "action": "phone_notifications",
+      "label": "Notifications"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "audio_file",
+      "action": "storage_music_player",
+      "label": "Storage"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "cell_tower",
+      "action": "fm_radio_player",
+      "label": "FM Radio"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "media_bluetooth_on",
+      "action": "a2dp_music_player",
+      "label": "A2DP"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "general_device",
+      "action": "autobox_player",
+      "label": "Autobox"
+    },
+    {
+      "iconFontFamily": "Hudiy Symbols",
+      "iconName": "\ue900",
+      "action": "android_auto_player",
+      "label": "Android Auto"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "web_asset",
+      "action": "background_applications",
+      "label": "Active apps"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "settings",
+      "action": "settings_menu",
+      "label": "Settings"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "usb",
+      "action": "connect_android_auto_usb",
+      "label": "Connect USB"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "wifi",
+      "action": "connect_android_auto_wifi",
+      "label": "Connect WiFi"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "redo",
+      "action": "resume_android_auto_projection",
+      "label": "Resume"
+    },
+    {
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "cancel_presentation",
+      "action": "quit_hudiy",
+      "label": "Quit"
+    },
+  ]
+}
