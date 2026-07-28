@@ -101,6 +101,6 @@
       "iconName": "cancel_presentation",
       "action": "quit_hudiy",
       "label": "Quit"
-    },
+    }
   ]
 }
