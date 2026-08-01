@@ -30,6 +30,7 @@ This project retrofits the original display with a modern computing platform whi
 - USB 3.0 Y cable, Item No. 83176 [Delock](https://www.delock.com/produkt/83176/merkmale.html);
 - 4 port USB-A HUB, powered [Startech.com](https://www.startech.com/en-us/usb-hubs/h5a4a-usb-hub);
 - USB to LIN Interface [fischl](https://www.fischl.de/order/);
+- USB Clip Microphone AG0056, /B01-1-05/
 - Arduino Uno (China clone) + Prototype Screw Shield Expansion Board;
 - DC 5V Relay Module 1-Channel Relay Switch with Optocoupler [dac.ge](https://dac.ge/en/?product=45782);
 - CAN-BUS Shield v1.2 [seeedstudio/ElecFreaks](https://wiki.seeedstudio.com/CAN-BUS_Shield_V1.2/);
