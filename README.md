@@ -447,8 +447,20 @@ Here is the final setup:
 </div>
 
 <div align="center">
-  <img src="pics/Black Box.jpg" width="850">
-  <br>
-  <i>Final setup of Raspberry Pi hardware with peripherals into the factory phone module compartment.</i>
-  <br><br> </div>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="pics/Black Box.jpg" width="500">
+        <br>
+        <i></i>
+      </td>
+      <td align="center">
+        <img src="pics/Black Box_2.jpg" width="500">
+        <br>
+        <i> </i>
+      </td>
+    </tr>
+  </table>
+</div>
 
+<i>Final setup of Raspberry Pi hardware with peripherals into the factory phone module compartment.</i>
