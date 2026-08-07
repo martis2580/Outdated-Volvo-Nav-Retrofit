@@ -1,9 +1,11 @@
 # Outdated-Volvo-P2-Nav-Retrofit-Guide-for-Android-Auto-Multimedia
+<i> Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. </i>
+
 > [!IMPORTANT]
 > **Project Status: Field Testing (FT)**
-...
+The hardware and software are fully functional and are currently undergoing long-term validation in a real vehicle.
 
-Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. 
+Known observations and field test results are documented in the [Field Testing](docs/field-testing.md) document.
 
 📦 All necessary 3D models for this project can be found here:
 
