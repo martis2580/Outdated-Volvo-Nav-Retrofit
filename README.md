@@ -23,7 +23,7 @@ This project retrofits the original display with a modern computing platform whi
 - Android Auto / CarPlay
 
 ## BOM of Hardware:
-- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler + RPi RTC Battery;
+- Raspberry Pi 5, 8 GB RAM + RPi Active Cooler + RPi RTC Battery (Panasonic ML2020);
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
 - USB SSD 120GB, R/W speed up to 500MB/s* [Emtec](https://www.emtec-international.com/en/ssd/internal/x150-ssd-power-plus);
 - 2.5 Inch SSD Enclosures with USB 3.0 [UGREEN](https://ugreen.lk/product/ugreen-2-5-inch-sata-hdd-ssd-5gbps-hard-drive-enclosure-us221-30847-1-year-warranty/?srsltid=AfmBOortrrhXOcDRaFlARd_YokYD07JoaTn83PqAoa8J1XTD4yknzpjK);
