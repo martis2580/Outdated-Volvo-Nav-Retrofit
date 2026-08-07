@@ -3,7 +3,7 @@
 
 > [!IMPORTANT]
 > **Project Status: Field Testing (FT)**
-The hardware and software are fully functional and are currently undergoing long-term validation in a real vehicle.
+The hardware and software are fully functional and have been undergoing real-world vehicle testing since July 8th, 2026.
 
 Known observations and field test results are documented in the [Field Testing](docs/field-testing.md) document.
 
