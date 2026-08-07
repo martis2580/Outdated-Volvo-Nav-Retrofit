@@ -24,6 +24,14 @@ This project retrofits the original display with a modern computing platform whi
 - Automatic screen deployment
 - Android Auto / CarPlay
 
+### Project Motivation
+
+Modern vehicles increasingly rely on large touchscreen displays for navigation and vehicle controls. While these systems provide extensive functionality, they often replace physical controls with touch-based interfaces that require greater visual attention during operation.
+
+This project is inspired by an older engineering philosophy: placing essential information within the driver's natural field of view while allowing interaction through tactile steering wheel controls.
+
+Rather than replacing the original Volvo RTI concept, the goal is to preserve its ergonomic design and combine it with modern, open-source hardware and software. By bringing new functionality to the factory motorized display and steering wheel controls, this project aims to demonstrate that well-engineered ideas remain valuable regardless of their age.
+
 ## BOM of Hardware:
 - Raspberry Pi 5, 8 GB RAM + RPi Active Cooler + RPi RTC Battery (Panasonic ML2020);
 - Power supply, minimum 27W [Traco Power](https://www.tracopower.com/int/model/tmdc-40-2411);
