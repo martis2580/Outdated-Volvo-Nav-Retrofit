@@ -1,8 +1,12 @@
 # Outdated-Volvo-P2-Nav-Retrofit-Guide-for-Android-Auto-Multimedia
 <i> Designed specifically for Volvo P2 models lacking the factory-installed RTI navigation system. </i>
 
+<p align="center">
+  <img src="pics/Android_auto_display.jpg" width="900">
+</p>
+
 > [!IMPORTANT]
-> **Project Status: Field Testing (FT)**
+> **Project Status: v1.0 — Initial Release**
 The hardware and software are fully functional and have been undergoing real-world vehicle testing since July 8th, 2026.
 
 Known observations and field test results are documented in the [Field Testing](docs/field-testing.md) document.
