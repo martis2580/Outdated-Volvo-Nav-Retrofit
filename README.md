@@ -474,3 +474,6 @@ Here is the final setup:
 </div>
 
 <i>Final setup of Raspberry Pi hardware with peripherals into the factory phone module compartment.</i>
+
+### Roadmap
+See ROADMAP.md for the current development roadmap and planned future features.
