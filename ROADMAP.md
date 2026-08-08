@@ -25,10 +25,10 @@ for the project.
 ## Future Development
 
 - [ ] CAN-Based Low-Voltage Battery Protection;
-      [i]Monitor vehicle battery voltage over CAN and implement intelligent power shutdown to prevent excessive battery discharge. [/i]
+      <i>Monitor vehicle battery voltage over CAN and implement intelligent power shutdown to prevent excessive battery discharge. </i>
 - [ ] OEM Ambient Light-Based Display Control;
-      [i]Integrate the factory ambient light sensor for automatic RTI display backlight adjustment.[/i]
+      <i>Integrate the factory ambient light sensor for automatic RTI display backlight adjustment.</i>
 - [ ] OEM Temperature Sensor Integration
-      [i]Use the factory internal temperature sensor to monitor cabin/display-area temperature and implement thermal protection during high-temperature conditions.[/i]
+      <i>Use the factory internal temperature sensor to monitor cabin/display-area temperature and implement thermal protection during high-temperature conditions.</i>
 
 Note: Feature descriptions and implementation details will be expanded as development progresses.
