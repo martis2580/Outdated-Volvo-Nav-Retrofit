@@ -320,6 +320,8 @@ A Python-based hardware-to-software bridge script designed for Raspberry Pi. It 
 More about set up:
 📖 [Raspberry Pi LIN Setup](docs/raspberry-pi-lin-setup.md)
 
+See [RASPBERRY_PI.md](RASPBERRY_PI.md) for additional Raspberry Pi configuration.
+
 ## Bringing the Volvo Pop-up Screen Back to Life
 
 The stock Volvo display is an old-school 20th-century analog device, which actually makes it a great candidate for mods! It’s super easy to hook up to embedded gear like a Raspberry Pi, all you really need is to feed it a basic analog video signal. To pop the screen up and down, you just need to send the right commands over the serial line. Huge thanks to @TymEK49 for sharing the commands to control the RTI screen! [RTI_control](https://github.com/TymEK49/RTI_control).
