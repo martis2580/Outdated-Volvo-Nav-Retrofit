@@ -40,7 +40,10 @@ void processCan()
 
     if (id == IGNITION_CAN_ID && len > IGNITION_BYTE_INDEX)
     {
-      bool ignitionOn = (buf[IGNITION_BYTE_INDEX] & IGNITION_ON_MASK) == IGNITION_ON_VALUE;
+      uint8_t ignitionByte = buf[IGNITION_BYTE_INDEX] & IGNITION_ON_MASK;
+      bool ignitionOn = ignitionByte == IGNITION_ON_VALUE
+        || ignitionByte == IGNITION_ON_ALT_VALUE_1
+        || ignitionByte == IGNITION_ON_ALT_VALUE_2;
       processIgnitionFrame(ignitionOn, now);
     }
   }

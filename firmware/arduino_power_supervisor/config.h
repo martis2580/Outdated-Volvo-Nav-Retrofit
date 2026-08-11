@@ -15,6 +15,8 @@ const uint32_t IGNITION_CAN_ID = 0x217FFC;
 const uint8_t IGNITION_BYTE_INDEX = 5;
 const uint8_t IGNITION_ON_MASK = 0xF8;
 const uint8_t IGNITION_ON_VALUE = 0x58;
+const uint8_t IGNITION_ON_ALT_VALUE_1 = 0x98;               // cruise-control active variant on the same CAN frame
+const uint8_t IGNITION_ON_ALT_VALUE_2 = 0xD8;               // speed +/- variant on the same CAN frame
 
 const unsigned long IGNITION_ON_STABLE_MS = 10000UL;
 const unsigned long IGNITION_ON_GAP_RESET_MS = 3000UL;      // tolerate normal CAN spacing, but reset after a real interruption
