@@ -219,6 +219,8 @@ packet
 53-54: "ACK"
 55-56: "EOF"
 ```
+For CAN ID `0x217FFC`, the ignition status byte can change from 0x58 to 0x98 or 0xD8 when cruise control is activated or the set speed is adjusted using `+ / -`.
+The decoder has been updated to recognize all three values as Ignition ON: `0x58`, `0x98`, and `0xD8`.
 
 Important: the Volvo P2 low-speed CAN communication bit rate is 125 kbps.
 
