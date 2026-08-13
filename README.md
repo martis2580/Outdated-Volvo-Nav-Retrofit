@@ -324,6 +324,10 @@ More about set up:
 
 See [RASPBERRY_PI.md](RASPBERRY_PI.md) for additional Raspberry Pi configuration.
 
+<p align="center">
+  <img src="pics/android-auto-navigation-control_1.gif" alt="Volvo OEM navigation control" width="600" />
+</p>
+
 ## Bringing the Volvo Pop-up Screen Back to Life
 
 The stock Volvo display is an old-school 20th-century analog device, which actually makes it a great candidate for mods! It’s super easy to hook up to embedded gear like a Raspberry Pi, all you really need is to feed it a basic analog video signal. To pop the screen up and down, you just need to send the right commands over the serial line. Huge thanks to @TymEK49 for sharing the commands to control the RTI screen! [RTI_control](https://github.com/TymEK49/RTI_control).
