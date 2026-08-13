@@ -325,7 +325,7 @@ More about set up:
 See [RASPBERRY_PI.md](RASPBERRY_PI.md) for additional Raspberry Pi configuration.
 
 <p align="center">
-  <img src="pics/android-auto-navigation-control_1.gif" alt="Volvo OEM navigation control" width="600" />
+  <img src="pics/android-auto-navigation-control_1.gif" alt="Volvo OEM navigation control" width="450" />
 </p>
 
 ## Bringing the Volvo Pop-up Screen Back to Life
