@@ -89,7 +89,6 @@ static void abortShutdownAndRestart(unsigned long now)
   setPiShutdownRelay(false);
   controlState = STATE_WAIT_FOR_IGNITION;
   runningActive = false;
-  dcDcRelayOn = true;
   screenOnPending = false;
   disarmDcDcCut();
   ignitionOnPending = true;
@@ -101,14 +100,13 @@ static void abortShutdownAndRestart(unsigned long now)
   crankGraceStartedMillis = 0;
   phaseStartedMillis = 0;
   shutdownStartedMillis = 0;
-  setDcDcRelay(true);
 }
 
 void resetToWaitingState(bool keepDcDcOn)
 {
   controlState = STATE_WAIT_FOR_IGNITION;
   runningActive = false;
-  dcDcRelayOn = keepDcDcOn || !dcDcCutArmed;
+  dcDcRelayOn = keepDcDcOn;
   screenOnPending = false;
   ignitionOnPending = false;
   ignitionOnSinceMillis = 0;
