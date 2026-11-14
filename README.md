@@ -9,7 +9,16 @@
 > **Project Status: v1.0 — Initial Release**
 The hardware and software are fully functional and have been undergoing real-world vehicle testing since July 8th, 2026.
 
-Known observations and field test results are documented in the [Field Testing](docs/field-testing.md) document.
+## What's New
+
+| Date | Feature | What it does | Details |
+|---|---|---|---|
+| 2026-11-14 | 📊 **Raspberry Pi performance dashboard** | Live CPU, RAM, SoC temperature and cooling fan RPM in a custom HUDIY widget, next to the built-in date, now-playing and phone widgets | [Docs](docs/raspberry-pi-hudiy-performance-dashboard.md) |
+| 2026-08-11 | 🔑 **Improved ignition decoding** | CAN `0x217FFC` now recognises `0x58`, `0x98` and `0xD8`, so cruise control activity no longer looks like ignition off | [Power supervisor](#the-power-management--hardware-supervisor) |
+| 2026-07-25 | 🎛️ **Long-press steering wheel buttons** | Hold Left/Right ≥ 700 ms to trigger extra HUDIY actions, so a few OEM buttons control more of the UI | [bridge.py](raspi_config/bridge.py) |
+| 2026-07-08 | 🧪 **Field testing** | Real-vehicle testing started and is ongoing | [Field Testing](docs/field-testing.md) |
+
+[![Raspberry Pi performance dashboard](pics/Raspi_performance_on_dashboard.jpg)](docs/raspberry-pi-hudiy-performance-dashboard.md)
 
 📦 All necessary 3D models for this project can be found here:
 
