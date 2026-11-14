@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Raspberry Pi performance</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "DejaVu Sans", sans-serif;
+      background: #151817;
+      color: #f4f5f2;
+      --muted: #a5ada6;
+      --accent: #e7a34b;
+      --track: #39413c;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%; margin: 0; overflow: hidden;
+      background: #151817; color: #f4f5f2;
+    }
+    body { padding: 12px; }
+    .panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: stretch;
+      gap: 12px;
+      width: 100%;
+      height: 100%;
+    }
+    .metric {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      justify-content: center;
+      padding: 11px 12px;
+      border: 1px solid #465148;
+      border-radius: 6px;
+      background: #202522;
+      box-shadow: inset 0 0 0 2px #191d1a;
+    }
+    .metric-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .metric-icon {
+      order: 2;
+      width: 56px;
+      height: 56px;
+      flex: 0 0 56px;
+      padding: 5px;
+      color: #f7f8f5;
+    }
+    .metric-icon path, .metric-icon rect, .metric-icon circle, .metric-icon line {
+      vector-effect: non-scaling-stroke;
+    }
+    .label {
+      color: var(--muted);
+      font-size: clamp(18px, 4vw, 22px);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-family: "DejaVu Sans Mono", monospace;
+      order: 1;
+    }
+    .metric-heading { margin-bottom: 5px; }
+    .value-line { display: flex; align-items: baseline; gap: 5px; }
+    .value {
+      font-family: "DejaVu Sans Mono", monospace;
+      font-size: clamp(24px, 6vw, 42px);
+      font-weight: 700;
+      line-height: 1.05;
+      font-variant-numeric: tabular-nums;
+    }
+    .unit { color: var(--muted); font-size: clamp(11px, 2vw, 15px); }
+    .detail { color: var(--muted); font-size: clamp(11px, 2.2vw, 14px); margin-top: 4px; white-space: nowrap; }
+    .bar { height: 5px; margin-top: 8px; overflow: hidden; border-radius: 5px; background: var(--track); }
+    .fill { height: 100%; width: 0; border-radius: inherit; background: var(--accent); transition: width .6s ease; }
+    .updated { position: absolute; right: 10px; bottom: 2px; font-size: 10px; }
+    .status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+    .offline { --accent: #e1a64a; }
+    @media (max-width: 280px) { body { padding: 7px; } .panel { gap: 7px; } .metric { padding: 6px 7px; } }
+  </style>
+</head>
+<body>
+  <main class="panel" aria-label="Raspberry Pi performance">
+    <section class="metric" aria-label="CPU load">
+      <div class="metric-heading">
+        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 2.5v3M15 2.5v3M9 18.5v3M15 18.5v3M2.5 9h3M2.5 15h3M18.5 9h3M18.5 15h3"/>
+          <rect x="5.5" y="5.5" width="13" height="13" rx="2" fill="currentColor"/>
+          <rect x="9" y="9" width="6" height="6" rx="1" fill="#202522" stroke="none"/>
+          <path d="M10.5 12h3M12 10.5v3" stroke="#202522"/>
+        </svg>
+        <div class="label">CPU</div>
+      </div>
+      <div class="value-line"><span id="cpu" class="value">--</span><span class="unit">%</span></div>
+      <div class="bar"><div id="cpu-bar" class="fill"></div></div>
+    </section>
+    <section class="metric" aria-label="Memory use">
+      <div class="metric-heading">
+        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 5.5h18v11H3z" fill="currentColor"/>
+          <rect x="5" y="7.5" width="3" height="5" rx=".5" fill="#202522" stroke="none"/>
+          <rect x="10.5" y="7.5" width="3" height="5" rx=".5" fill="#202522" stroke="none"/>
+          <rect x="16" y="7.5" width="3" height="5" rx=".5" fill="#202522" stroke="none"/>
+          <path d="M4 16.5v2M7 16.5v2M10 16.5v2M13 16.5v2M16 16.5v2M19 16.5v2"/>
+          <path d="M3 5.5h18" stroke="#202522"/>
+        </svg>
+        <div class="label">RAM</div>
+      </div>
+      <div class="value-line"><span id="ram" class="value">--</span><span class="unit">%</span></div>
+      <div id="ram-detail" class="detail">Waiting for metrics</div>
+      <div class="bar"><div id="ram-bar" class="fill"></div></div>
+    </section>
+    <section class="metric" aria-label="CPU temperature">
+      <div class="metric-heading">
+        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"/>
+          <path d="M11 8v9"/>
+          <circle cx="11" cy="18" r="1.7" fill="currentColor" stroke="none"/>
+        </svg>
+        <div class="label">CPU temp</div>
+      </div>
+      <div class="value-line"><span id="temperature" class="value">--</span><span class="unit">°C</span></div>
+      <div id="temperature-detail" class="detail">Waiting for sensor</div>
+    </section>
+    <section class="metric" aria-label="Cooler fan speed">
+      <div class="metric-heading">
+        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.2" opacity=".55"/>
+          <g fill="currentColor" stroke="none">
+            <path d="M11.1 10.5c-2.3-1.3-3.1-4.3-1.8-6 .9-1.2 2.7-1.1 3.3.2.7 1.4.1 3.7-.7 5.6Z"/>
+            <path d="M11.1 10.5c-2.3-1.3-3.1-4.3-1.8-6 .9-1.2 2.7-1.1 3.3.2.7 1.4.1 3.7-.7 5.6Z" transform="rotate(120 12 12)"/>
+            <path d="M11.1 10.5c-2.3-1.3-3.1-4.3-1.8-6 .9-1.2 2.7-1.1 3.3.2.7 1.4.1 3.7-.7 5.6Z" transform="rotate(240 12 12)"/>
+          </g>
+          <circle cx="12" cy="12" r="1.8" fill="#202522"/>
+          <circle cx="12" cy="12" r="1.8"/>
+        </svg>
+        <div class="label">Cooler</div>
+      </div>
+      <div class="value-line"><span id="fan" class="value">--</span><span class="unit">RPM</span></div>
+      <div id="fan-detail" class="detail">Waiting for tachometer</div>
+    </section>
+    <div id="updated" class="detail updated">Starting</div>
+    <div id="status" class="status" aria-live="polite">Waiting for the local metrics service.</div>
+  </main>
+  <script>
+    const byId = (id) => document.getElementById(id);
+    const percent = (value) => Number.isFinite(value) ? Math.max(0, Math.min(100, value)) : null;
+    async function refresh() {
+      try {
+        const response = await fetch('/api/metrics', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        const cpu = percent(data.cpu_percent);
+        const ram = percent(data.memory?.used_percent);
+        const temperature = Number.isFinite(data.cpu_temp_c) ? data.cpu_temp_c : null;
+        const fan = Number.isFinite(data.fan_rpm) ? data.fan_rpm : null;
+        byId('cpu').textContent = cpu === null ? '--' : Math.round(cpu);
+        byId('cpu-bar').style.width = `${cpu ?? 0}%`;
+        byId('ram').textContent = ram === null ? '--' : Math.round(ram);
+        byId('ram-bar').style.width = `${ram ?? 0}%`;
+        byId('ram-detail').textContent = data.memory
+          ? `${data.memory.used_mib} / ${data.memory.total_mib} MiB`
+          : 'Memory data unavailable';
+        byId('temperature').textContent = temperature === null ? '--' : temperature.toFixed(1);
+        byId('temperature-detail').textContent = temperature === null
+          ? 'Sensor unavailable'
+          : 'SoC temperature';
+        byId('fan').textContent = fan === null ? '--' : Math.round(fan).toLocaleString();
+        byId('fan-detail').textContent = fan === null
+          ? 'Tachometer unavailable'
+          : fan === 0 ? 'Fan stopped' : 'Fan speed';
+        byId('updated').textContent = `Updated ${new Date(data.updated_at * 1000).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})}`;
+        document.body.classList.remove('offline');
+        byId('status').textContent = 'Raspberry Pi metrics are current.';
+      } catch (_error) {
+        document.body.classList.add('offline');
+        byId('updated').textContent = 'Offline';
+        byId('ram-detail').textContent = 'Service unavailable';
+        byId('temperature-detail').textContent = 'Service unavailable';
+        byId('fan-detail').textContent = 'Service unavailable';
+        byId('status').textContent = 'The local metrics service is unavailable.';
+      }
+    }
+    refresh();
+    window.setInterval(refresh, 2000);
+  </script>
+</body>
+</html>
