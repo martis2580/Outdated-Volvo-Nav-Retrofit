@@ -1,0 +1,31 @@
+{
+  "dashboards": [
+    {
+      "isDefault": true,
+      "iconFontFamily": "Material Symbols Rounded",
+      "iconName": "memory",
+      "action": "rpi_performance_dashboard",
+      "widgets": [
+        {
+          "type": "date_time",
+          "size": "small_narrow"
+        },
+        {
+          "type": "now_playing",
+          "size": "medium_narrow"
+        },
+        {
+          "type": "web_static",
+          "size": "medium_narrow",
+          "url": "http://127.0.0.1:8765/",
+          "controlAudioFocus": false,
+          "audioStreamCategory": "NONE"
+        },
+        {
+          "type": "phone",
+          "size": "small_narrow"
+        }
+      ]
+    }
+  ]
+}
