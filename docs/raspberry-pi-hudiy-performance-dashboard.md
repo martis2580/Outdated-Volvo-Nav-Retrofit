@@ -12,9 +12,7 @@ The dashboard also keeps HUDIY's built-in date, now playing, and phone widgets.
 The performance widget uses the `medium_narrow` size and the dashboard action
 is `rpi_performance_dashboard`.
 
-<p align="center">
-  <img src="pics/Raspi_performance_on_dashboard.jpg" width="900">
-</p>
+<img src="../pics/Raspi_performance_on_dashboard.jpg" width="900" alt="Raspberry Pi performance dashboard">
 
 ## How it works
 
