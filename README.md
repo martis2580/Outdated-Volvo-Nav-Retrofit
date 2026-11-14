@@ -322,7 +322,7 @@ A Python-based hardware-to-software bridge script designed for Raspberry Pi. It 
 More about set up:
 📖 [Raspberry Pi LIN Setup](docs/raspberry-pi-lin-setup.md)
 
-See [RASPBERRY_PI.md](RASPBERRY_PI.md) for additional Raspberry Pi configuration.
+See [RASPBERRY_PI.md](docs/RASPBERRY_PI.md) for additional Raspberry Pi configuration.
 
 <p align="center">
   <img src="pics/android-auto-navigation-control_1.gif" alt="Volvo OEM navigation control" width="450" />
@@ -488,4 +488,4 @@ Here is the final setup:
 <i>Final setup of Raspberry Pi hardware with peripherals into the factory phone module compartment.</i>
 
 ### Roadmap
-See [ROADMAP.md](ROADMAP.md) for the current development roadmap and planned future features.
+See [ROADMAP.md](docs/ROADMAP.md) for the current development roadmap and planned future features.
