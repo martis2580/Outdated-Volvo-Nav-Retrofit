@@ -22,6 +22,8 @@ The hardware and software are fully functional and have been undergoing real-wor
 |:---:|:---:|
 | <a href="docs/raspberry-pi-hudiy-performance-dashboard.md"><img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="350"></a><br><sub> RPi performance dashboard</sub> | <a href="#"><img src="pics/2.jpg" alt="2 pic" width="350"></a><br><sub>2 pic</sub> |
 
+**Quick links:** [What's New](#whats-new) · [BOM](#bom-of-hardware) · [Power Supervisor](#the-power-management--hardware-supervisor) · [LIN Buttons](#making-lin-work) · [RTI Screen](#bringing-the-volvo-pop-up-screen-back-to-life) · [Audio](#building-a-bridge-between-new-headunit-and-factory-audio-system) · [Roadmap](docs/ROADMAP.md)
+
 📦 All necessary 3D models for this project can be found here:
 
 [![Printables](https://img.shields.io/badge/Printables-Techiejam-orange?style=for-the-badge&logo=Prusa)](https://www.printables.com/@Techiejam_2191647)
