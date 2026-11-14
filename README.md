@@ -20,7 +20,7 @@ The hardware and software are fully functional and have been undergoing real-wor
 
 <p align="center">
   <a href="docs/raspberry-pi-hudiy-performance-dashboard.md">
-    <img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="400">
+    <img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="600">
   </a>
 </p>
 
