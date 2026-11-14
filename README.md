@@ -20,7 +20,7 @@ The hardware and software are fully functional and have been undergoing real-wor
 
 | | |
 |:---:|:---:|
-| <a href="docs/raspberry-pi-hudiy-performance-dashboard.md"><img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="350"></a><br><sub> RPi performance dashboard</sub> | <a href="#"><img src="pics/2.jpg" alt="2 pic" width="350"></a><br><sub>Antro paveikslėlio pavadinimas</sub> |
+| <a href="docs/raspberry-pi-hudiy-performance-dashboard.md"><img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="350"></a><br><sub> RPi performance dashboard</sub> | <a href="#"><img src="pics/2.jpg" alt="2 pic" width="350"></a><br><sub>2 pic</sub> |
 
 📦 All necessary 3D models for this project can be found here:
 
