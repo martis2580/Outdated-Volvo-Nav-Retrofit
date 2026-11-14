@@ -18,7 +18,11 @@ The hardware and software are fully functional and have been undergoing real-wor
 | 2026-07-25 | 🎛️ **Long-press steering wheel buttons** | Hold Left/Right ≥ 700 ms to trigger extra HUDIY actions, so a few OEM buttons control more of the UI | [bridge.py](raspi_config/bridge.py) |
 | 2026-07-08 | 🧪 **Field testing** | Real-vehicle testing started and is ongoing | [Field Testing](docs/field-testing.md) |
 
-[![Raspberry Pi performance dashboard](pics/Raspi_performance_on_dashboard.jpg)](docs/raspberry-pi-hudiy-performance-dashboard.md)
+<p align="center">
+  <a href="docs/raspberry-pi-hudiy-performance-dashboard.md">
+    <img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="400">
+  </a>
+</p>
 
 📦 All necessary 3D models for this project can be found here:
 
