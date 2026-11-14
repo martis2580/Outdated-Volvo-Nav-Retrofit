@@ -170,8 +170,22 @@ def main() -> int:
     active_payload: Optional[Tuple[int, int]] = None
     active_since = 0.0
     long_press_fired = False
-    release_timeout_s = 0.20
     long_press_timeout_s = max(0, args.long_press_ms) / 1000.0
+
+    def finish_active_press() -> None:
+        """Send a deferred short action if the active press was not long."""
+        nonlocal active_payload, active_since, long_press_fired
+
+        if active_payload in LONG_PRESS_ACTIONS and not long_press_fired:
+            short_action = BUTTON_MAP.get(active_payload)
+            if short_action is not None:
+                LOG.info("Short press %s", short_action.name)
+                for key_code in short_action.keys:
+                    tap_key(ui, key_code)
+
+        active_payload = None
+        active_since = 0.0
+        long_press_fired = False
 
     def handle_frame(frame_obj) -> None:
         nonlocal active_payload, active_since, long_press_fired
@@ -195,26 +209,35 @@ def main() -> int:
         payload = (data[0], data[1])
 
         if payload == NO_PRESS:
-            active_payload = None
-            active_since = 0.0
-            long_press_fired = False
+            finish_active_press()
             return
 
         first_seen = payload != active_payload
         if first_seen:
+            # A new button frame also ends the previous press if a separate
+            # NO_PRESS frame was not observed between the two buttons.
+            finish_active_press()
             active_payload = payload
             active_since = time.monotonic()
             long_press_fired = False
 
-        if not args.repeat_same and not first_seen:
-            return
-
         action = BUTTON_MAP.get(payload)
         if action is None:
-            LOG.info("Unmapped frame 0x%02X: %s", current_frame_id, payload_text)
-            if not args.dump_all_frames:
-                return
-            LOG.debug("No action mapped for 0x%02X payload %s", current_frame_id, payload_text)
+            if first_seen:
+                LOG.info("Unmapped frame 0x%02X: %s", current_frame_id, payload_text)
+            if args.dump_all_frames:
+                LOG.debug("No action mapped for 0x%02X payload %s", current_frame_id, payload_text)
+            return
+
+        if payload in LONG_PRESS_ACTIONS:
+            # Left and right are deferred until release. The main loop emits
+            # their long action at the threshold; release emits the short
+            # action only if the threshold was not reached.
+            if first_seen:
+                LOG.debug("Waiting to classify %s press", action.name)
+            return
+
+        if not first_seen and not args.repeat_same:
             return
 
         LOG.info("Action %s from 0x%02X: %s", action.name, current_frame_id, payload_text)
