@@ -20,7 +20,7 @@ The hardware and software are fully functional and have been undergoing real-wor
 
 | | |
 |:---:|:---:|
-| <a href="docs/raspberry-pi-hudiy-performance-dashboard.md"><img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="350"></a><br><sub> RPi performance dashboard</sub> | <a href="#"><img src="pics/RPi_cooling_cfd.png" alt="CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure." width="350"></a><br><sub>CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure.</sub> |
+| <a href="docs/raspberry-pi-hudiy-performance-dashboard.md"><img src="pics/Raspi_performance_on_dashboard.jpg" alt="Raspberry Pi performance dashboard" width="350"></a><br><sub> RPi performance dashboard</sub> | <a href="#"><img src="pics/RPi_cooling_cfd.png" alt="CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure." width="550"></a><br><sub>CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure.</sub> |
 
 📦 All necessary 3D models for this project can be found here:
 
