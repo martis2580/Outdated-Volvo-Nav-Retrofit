@@ -84,7 +84,7 @@ Without additional cooling, summer heat may cause thermal throttling, reduced st
 Install the fan cover with an active fan in warm climates, and check CPU temperature and fan RPM in Hudiy periodically, especially at the start of summer.
 
 <p align="center">
-  <img src="pics/RPi_cooling_cfd.png" width="900">
+  <img src="../pics/RPi_cooling_cfd.png" width="900">
 </p>
 
 > [!NOTE]
