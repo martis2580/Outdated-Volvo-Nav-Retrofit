@@ -42,7 +42,7 @@ If the battery is old or has reduced capacity, consider replacing it before inst
 
 ## FT-002 – Raspberry Pi 5 Overheating in Summer Without Additional Cooling
 
-**Status:** ⚠️ Observed
+**Status:** ✅ Verified
 
 ### Test Environment
 
@@ -87,7 +87,12 @@ Install the fan cover with an active fan in warm climates, and check CPU tempera
   <img src="../pics/RPi_cooling_cfd.png" width="900">
 </p>
 
+<p align="center">
+  <img src="../pics/Raspi_performance_on_dashboard.jpg" width="900">
+</p>
+
+
 > [!NOTE]
-> Qualitative observation only. No temperature logging was performed, so no specific temperature reduction is claimed.
+> Qualitative observation only based on live monitoring of CPU temperature and fan RPM in the Hudiy dashboard during normal use. No data logging was performed, so no specific temperature reduction is claimed yet.
 
 ---
