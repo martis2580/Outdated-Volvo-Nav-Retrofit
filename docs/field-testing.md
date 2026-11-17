@@ -83,10 +83,7 @@ Without additional cooling, summer heat may cause thermal throttling, reduced st
 
 Install the fan cover with an active fan in warm climates, and check CPU temperature and fan RPM in Hudiy periodically, especially at the start of summer.
 
-<figure align="center">
-  <img src="pics/RPi_cooling_cfd.png" alt="CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure." width="750">
-  <figcaption><em>CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure.</em></figcaption>
-</figure>
+![CFD simulation of temperature distribution and heat dissipation in the Raspberry Pi 5 enclosure.](pics/RPi_cooling_cfd.png)
 
 > [!NOTE]
 > Qualitative observation only. No temperature logging was performed, so no specific temperature reduction is claimed.
