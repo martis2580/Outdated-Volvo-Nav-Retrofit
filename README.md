@@ -141,6 +141,7 @@ A[Volvo FuseBox, F13_KL30] -->|12V| B(DC/DC 5.1V)
 A[Volvo FuseBox, F13_KL30] -->|12V| C(DC/DC 5V Always-On)
 B -->|5.1V| D(RaspberryPi 5)
 B -->|5.1V| E(USB 3.0 Y cable)-->|5.1V| F(SSD)
+B -->|5.1V| H(Cooling FAN)
 C -->|5V| G(Arduino Uno)
 ```
 
